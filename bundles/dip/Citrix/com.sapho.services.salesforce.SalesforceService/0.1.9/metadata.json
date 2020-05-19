@@ -6,7 +6,7 @@
   "title" : "Salesforce integration",
   "description" : "SalesForce",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Salesforce.43b28006ce57d083904eaa95297a166d.svg",
-  "masVersion" : "1.0.0-SNAPSHOT.6de66e0604500821351c1f20c7618d7f2ec36c09",
+  "masVersion" : "1.13.0-SNAPSHOT",
   "categories" : [ "WEB_SERVICES" ],
   "created" : "2020-05-19T13:56:58",
   "supportsOAuthForActions" : true,
