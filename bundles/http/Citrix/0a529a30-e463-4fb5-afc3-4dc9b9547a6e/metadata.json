@@ -5,9 +5,9 @@
   "title" : "MS Dynamics HTTP",
   "description" : "",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/ms-dynamics.28edaa50cab25022690f675dc95e059e.svg",
-  "masVersion" : "1.12.9",
+  "masVersion" : "1.13.6",
   "categories" : [ "INTERNAL_DEVELOPMENT" ],
-  "created" : "2020-05-13T14:33:24",
+  "created" : "2020-05-27T13:27:15",
   "supportsOAuthForActions" : true,
   "i18nLanguages" : [ "en" ],
   "apps" : [ {
