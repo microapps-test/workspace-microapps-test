@@ -8,9 +8,9 @@ from requests.exceptions import HTTPError
 import subprocess
 import zipfile
 
-# This script is run in Jenkins on a job triggered by the creation or update 
+# This script is run in Jenkins on a job triggered by the creation or update
 # of a JIRA "Submission" issue type on the MICROSUB project at issues.citrite.net
-# 
+#
 # The script will format the issue contents and raise a PR so that a pull request
 # can be created on GitHub where the microapp integration bundles are stored
 
@@ -36,7 +36,7 @@ SUPPORT_URL = "customfield_12635"
 DOCUMENT_URL = "customfield_31030"
 PRIVACY_URL = "customfield_31032"
 TERMS_URL = "customfield_31031"
-VENDOR = "customfield_31230" 
+VENDOR = "customfield_31230"
 HEADERS = {'Content-Type': 'application/json'}
 METADATA_FILE = "metadata.json"
 
@@ -45,16 +45,16 @@ METADATA_FILE = "metadata.json"
 GITHUB_USERNAME = args.githubUsername
 GITHUB_PASSWORD = args.githubPwd
 GITHUB_API_KEY = args.githubApiKey
-BUNDLE_REPO='{}/workspace-microapps-test-bundles'.format(GITHUB_USERNAME)
+BUNDLE_REPO = '{}/workspace-microapps-test-bundles'.format(GITHUB_USERNAME)
 
 # administrator to be contacted if the script fails
 ADMIN = "christopher.smallwood@citrix.com"
 
 
 def _jira_comment(comment, statusCode=1):
-    payload = json.dumps( {
+    payload = json.dumps({
         "body": comment
-    } )
+    })
     try:
         response = requests.post(
             url='{}/rest/api/2/issue/{}/comment'.format(HOST, ISSUE_ID),
@@ -68,20 +68,70 @@ def _jira_comment(comment, statusCode=1):
     exit(statusCode)
 
 
+def _pr_exists():
+    url = 'https://{}:{}@api.github.com/repos/{}/pulls'.format(GITHUB_USERNAME, GITHUB_API_KEY, BUNDLE_REPO)
+    headers = {'Content-Type': 'application/json'}
+    payload = json.dumps({
+        "head": ISSUE_ID,
+        "base": "master",
+    })
+    try:
+        response = requests.get(
+            url=url,
+            headers=headers,
+            data=payload
+        )
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        _jira_comment('Failed to contact GitHub repo:\n{}\n'
+        'Please contact Jenkins Admin: {}'.format(e, ADMIN))
+    else:
+        jsonData = response.json()
+        if len(jsonData) == 0:
+            return False, ""
+        else:
+            return True, jsonData[0]['html_url']
+
+
+def _raise_pr():
+    url = 'https://{}:{}@api.github.com/repos/{}/pulls'.format(GITHUB_USERNAME, GITHUB_API_KEY, BUNDLE_REPO)
+    headers = {'Content-Type': 'application/json'}
+    payload = json.dumps({
+        "title": "micoapp integration submission",
+        "body": "Please review submission before merging to master",
+        "head": ISSUE_ID,
+        "base": "master"
+    })
+    try:
+        response = requests.post(
+            url=url,
+            headers=headers,
+            data=payload
+        )
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        _jira_comment('Failed to create PR on bundle repo:\n{}\n'
+        'Please contact Jenkins Admin: {}'.format(e, ADMIN))
+    else:
+        pullRequestUrl = response.json()["html_url"]
+        _jira_comment('Jenkins job successfully created pull request.\n'
+        'You can view the pull request at {}'.format(pullRequestUrl), 0)
+
+
 def get_mapp_file(issueJson):
     # only allow one attachment and must be a .mapp file
     mappFile = ""
     numAttachments = len(issueJson['fields']['attachment'])
     if numAttachments > 1:
-        _jira_comment("Only attach a single file."
+        _jira_comment("Only attach a single file.\n"
         "Job will be submitted once extra files are removed.")
     elif numAttachments < 1:
-        _jira_comment("must attach a .mapp file."
+        _jira_comment("must attach a .mapp file.\n"
         "Job will be submitted once a .mapp file is attached.")
     else:
         mappFile = issueJson['fields']['attachment'][0]['filename']
         if not mappFile.endswith('.mapp'):
-            _jira_comment("Attachment must be a .mapp file."
+            _jira_comment("Attachment must be a .mapp file.\n"
             "Job will be submitted once a .mapp file is attached.")
         url = issueJson['fields']['attachment'][0]['content']
         try:
@@ -123,7 +173,7 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
     except subprocess.CalledProcessError as e:
         _jira_comment('Failed to create {} directory\n{}\n'
         'Please contact Jenkins Admin: {}'.format(tempDir, e, ADMIN))
-    
+
     # edit the metadata file
     exportId = ""
     try:
@@ -147,7 +197,7 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
         _jira_comment('Malformed {} file. Missing key\n{}\n'
         'Please contact Jenkins Admin: {}'.format(METADATA_FILE, e, ADMIN))
 
-    # place files in directory structure: ./http/<vendor>/<exportid> 
+    # place files in directory structure: ./http/<vendor>/<exportid>
     try:
         httpDir = './http'
         vendorDir = '{}/{}'.format(httpDir, vendor)
@@ -160,46 +210,34 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
     except subprocess.CalledProcessError as e:
         _jira_comment('Failed to create directory structure\n{}\n'
         'Please contact Jenkins Admin: {}'.format(e, ADMIN))
-    
-    # add files, create a git commit and push to branch
+
+    # add files, and create commit if there are any changes
     try:
         subprocess.run('git add {}'.format(exportDir), shell=True, check=True)
-        subprocess.run('git commit -sm "microapp submission - see issue {} on {}"'.format(
-            ISSUE_ID, HOST), shell=True, check=True)
-        subprocess.run('git push https://{}:{}@github.com/{}.git HEAD:{}'.format(
-            GITHUB_USERNAME, GITHUB_PASSWORD, BUNDLE_REPO, ISSUE_ID), shell=True, check=True)
+        subprocess.run('git update-index -q --refresh', shell=True, check=True)
+        proc = subprocess.run(
+            'git diff-index --quiet HEAD || echo change',
+            stdout=subprocess.PIPE, universal_newlines=True, shell=True, check=True)
+        if "change" in proc.stdout:
+            subprocess.run('git commit -sm "microapp submission - see issue {} on {}"'.format(
+                ISSUE_ID, HOST), shell=True, check=True)
+            subprocess.run('git push https://{}:{}@github.com/{}.git HEAD:{}'.format(
+                GITHUB_USERNAME, GITHUB_PASSWORD, BUNDLE_REPO, ISSUE_ID), shell=True, check=True)
+
+            # if there isn't already a pull request, then create one
+            pr = _pr_exists()
+            if pr[0]:
+                _jira_comment("New commit created on existing PR at {}".format(pr[1]), 0)
+            else:
+                _raise_pr()
+
     except IOError as e:
         _jira_comment('{} file not found.\n{}\n'
         'Please contact Jenkins Admin: {}'.format(exportDir, e, ADMIN))
     except subprocess.CalledProcessError as e:
-        _jira_comment('Failed to push to https://github.com/{}.git\n{}\n'
+        _jira_comment('Failed to push to bundle repo: https://github.com/{}.git\n{}\n'
         'Please contact Jenkins Admin: {}'.format(BUNDLE_REPO, e, ADMIN))
 
-
-def raise_pr():
-    url='https://{}:{}@api.github.com/repos/{}/pulls'.format(GITHUB_USERNAME, GITHUB_API_KEY, BUNDLE_REPO)
-    headers = {'Content-Type': 'application/json'}
-    payload = json.dumps( {
-        "title": "micoapp integration submission",
-        "body": "Please review submission before merging to master",
-        "head": ISSUE_ID,
-        "base": "master"
-    } )
-    try:
-        response = requests.post(
-            url=url,
-            headers=headers,
-            data=payload
-        )
-        response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        _jira_comment('Failed to create PR to bundle repo:\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(e, ADMIN))
-    else:
-        pullRequestUrl = response.json()["html_url"]
-        _jira_comment('Jenkins job successfully created pull request.\n'
-        'You can view the pull request at {}'.format(pullRequestUrl), 0)
-        
 
 def main():
     # create new or checkout existing branch
@@ -219,10 +257,9 @@ def main():
     termsOfUseUrl = issueJson['fields'][TERMS_URL]
     vendor = issueJson['fields'][VENDOR]
 
-    # download .mapp file from Jira issue, format and raise a PR on GitHub
+    # download .mapp file from Jira issue and format
     mappFile = get_mapp_file(issueJson)
     format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, supportUrl, vendor)
-    raise_pr()
 
 
 if __name__ == "__main__":
