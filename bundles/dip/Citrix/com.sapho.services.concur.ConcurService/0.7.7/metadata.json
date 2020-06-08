@@ -1,0 +1,46 @@
+{
+  "type" : "DIP",
+  "vendor" : "Citrix",
+  "id" : "com.sapho.services.concur.ConcurService",
+  "version" : "0.7.7",
+  "title" : "SAP Concur MICROAPP-9860-remove-quick-expenses",
+  "description" : "",
+  "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Concur.7f4236c35298ebbe5598db9a66e70273.svg",
+  "masVersion" : "1.15.0-SNAPSHOT",
+  "categories" : [ "WEB_SERVICES" ],
+  "created" : "2020-06-08T19:22:49",
+  "supportsOAuthForActions" : true,
+  "i18nLanguages" : [ "de", "en", "es", "fr", "it", "ja", "nl", "pt-BR", "zh-CN" ],
+  "apps" : [ {
+    "uuid" : "0d595252-ef65-4efb-a57c-8dd4dcab5440",
+    "title" : "Expenses",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "51b9c871-58de-4370-96ef-8ecdb0a95f56",
+    "title" : "Reports",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "cb18e94f-0ff8-4875-9878-e203f74c782d",
+    "title" : "Itineraries",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "dabf40b7-a11a-4ce2-ad4a-a712f157f451",
+    "title" : "Approvals",
+    "numberOfEvents" : 3,
+    "action" : true
+  } ],
+  "vaResolvers" : [ {
+    "name" : "ExpenseReport Details",
+    "intentName" : "ExpenseReport.Details"
+  }, {
+    "name" : "ExpenseReport Lookup",
+    "intentName" : "ExpenseReport.Lookup"
+  } ],
+  "tags" : [ {
+    "tag" : "helpUrl",
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps/set-up-template-integrations/integrate-concur.html"
+  } ]
+}
