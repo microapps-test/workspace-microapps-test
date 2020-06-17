@@ -2,92 +2,92 @@
   "type" : "HTTP",
   "vendor" : "Citrix",
   "id" : "0a529a30-e463-4fb5-afc3-4dc9b9547a6e",
-  "title" : "MS Dynamics HTTP",
-  "description" : "",
+  "title" : "MS Dynamics HTTP 9883",
+  "description" : "MS Dynamics Beta version",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/ms-dynamics.28edaa50cab25022690f675dc95e059e.svg",
-  "masVersion" : "1.12.9",
+  "masVersion" : "1.14.0",
   "categories" : [ "INTERNAL_DEVELOPMENT" ],
-  "created" : "2020-05-13T14:33:24",
+  "created" : "2020-06-16T12:28:57",
   "supportsOAuthForActions" : true,
-  "i18nLanguages" : [ "de", "en", "es", "fr", "it", "ja", "nl", "pt-BR", "zh-CN" ],
+  "i18nLanguages" : [ "en" ],
   "apps" : [ {
-    "uuid" : "0f9d65a1-8e7f-4921-b590-ceb32f774196",
-    "title" : "Create Account",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "0fdd94ec-2271-4cf3-8c8e-d7adf418db2c",
-    "title" : "Appointments",
-    "numberOfEvents" : 2,
-    "action" : true
-  }, {
-    "uuid" : "1817d0a2-bf41-4975-ac22-7cb5a15e2b10",
-    "title" : "Create Appointment",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "3aa0c0fa-681b-4258-887d-91498e69df36",
-    "title" : "Create Phone Call",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "50d17a1b-0c67-4954-ba1c-5fd6279a1a37",
-    "title" : "Create Task",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "5e04bd98-b60b-42f0-b726-18e85424ebba",
-    "title" : "Tasks",
-    "numberOfEvents" : 2,
-    "action" : true
-  }, {
-    "uuid" : "6828b350-8775-4e4b-b67b-986c6534182f",
-    "title" : "Create Contact",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "6bef7d22-dd33-449c-a7e0-31642c3ce63b",
-    "title" : "Create Case",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "728155d0-a866-4673-8269-66cdf81456a9",
-    "title" : "Create Lead",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "7600cf66-e7b7-4e74-99b6-b76b5315a11a",
-    "title" : "Phone Calls",
-    "numberOfEvents" : 2,
-    "action" : true
-  }, {
-    "uuid" : "ab65f6df-5c6c-4dcd-b90e-ffe24fa42e8c",
-    "title" : "Create Opportunity",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "b009d5fd-b10f-45b1-9896-ee899483fed1",
+    "uuid" : "243798b2-fe63-4058-9088-9e815e6e5e5d",
     "title" : "Accounts",
     "numberOfEvents" : 2,
     "action" : true
   }, {
-    "uuid" : "d8d186fd-71c4-4f5f-95a0-2a8f820095b6",
-    "title" : "Cases",
-    "numberOfEvents" : 2,
+    "uuid" : "2e1c2a0c-4b05-48b4-8361-cd3bde22199c",
+    "title" : "Create Task",
+    "numberOfEvents" : 0,
     "action" : true
   }, {
-    "uuid" : "e2e42140-8910-4564-a2a6-aa09ae22d790",
-    "title" : "Opportunities",
-    "numberOfEvents" : 2,
+    "uuid" : "3c0a052e-582e-4cb0-9d52-c12e1fca09d8",
+    "title" : "Create Appointment",
+    "numberOfEvents" : 0,
     "action" : true
   }, {
-    "uuid" : "e63a679f-6439-4401-a983-c2a4b1cc41cf",
+    "uuid" : "41e5f5a9-99ba-460b-938d-8402ab1d9ec0",
+    "title" : "Create Contact",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "564a7b62-1895-463a-b12e-f9285942fe31",
     "title" : "Leads",
     "numberOfEvents" : 2,
     "action" : true
   }, {
-    "uuid" : "e9156912-d892-4408-bd27-1d542af9a82c",
+    "uuid" : "640dd278-0005-4d4f-8cdc-327a97baa5a6",
+    "title" : "Phone Calls",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "6967dc92-b0f2-46c1-a373-bee5a2fe04fd",
+    "title" : "Create Lead",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "6ba5ba0e-c263-4ff8-98ad-3ee0cb5af484",
+    "title" : "Create Case",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "6ce06ea9-c8b3-409b-bedd-febbe73acdf6",
+    "title" : "Create Phone Call",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "7fce8ef1-3a4f-4f5e-8886-5c53fb393689",
+    "title" : "Tasks",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "7fd00d4a-4aac-4ecb-b7b2-23d01174a4a1",
+    "title" : "Create Opportunity",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "99cda378-cf97-4563-a987-bbd2fe3dd8fc",
     "title" : "Contacts",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "9aea9b28-47c8-4b13-963f-c23ca38352c2",
+    "title" : "Create Account",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "cd4fd710-0215-460b-98cd-7da7ab5fe793",
+    "title" : "Appointments",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "f74ea469-e6b3-429b-9545-29b44882c80f",
+    "title" : "Opportunities",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "f7ba2d1d-2a43-40f9-86b4-3b7d2772e4ef",
+    "title" : "Cases",
     "numberOfEvents" : 2,
     "action" : true
   } ],
