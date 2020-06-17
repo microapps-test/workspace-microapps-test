@@ -5,89 +5,89 @@
   "title" : "MS Dynamics HTTP 9883",
   "description" : "MS Dynamics Beta version",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/ms-dynamics.28edaa50cab25022690f675dc95e059e.svg",
-  "masVersion" : "1.14.0",
+  "masVersion" : "1.16.5",
   "categories" : [ "INTERNAL_DEVELOPMENT" ],
-  "created" : "2020-06-16T12:28:57",
+  "created" : "2020-06-17T12:12:43",
   "supportsOAuthForActions" : true,
   "i18nLanguages" : [ "de", "en", "es", "fr", "it", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "243798b2-fe63-4058-9088-9e815e6e5e5d",
-    "title" : "Accounts",
-    "numberOfEvents" : 2,
-    "action" : true
-  }, {
-    "uuid" : "2e1c2a0c-4b05-48b4-8361-cd3bde22199c",
-    "title" : "Create Task",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "3c0a052e-582e-4cb0-9d52-c12e1fca09d8",
-    "title" : "Create Appointment",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "41e5f5a9-99ba-460b-938d-8402ab1d9ec0",
-    "title" : "Create Contact",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "564a7b62-1895-463a-b12e-f9285942fe31",
-    "title" : "Leads",
-    "numberOfEvents" : 2,
-    "action" : true
-  }, {
-    "uuid" : "640dd278-0005-4d4f-8cdc-327a97baa5a6",
+    "uuid" : "34912700-bd8c-4363-9926-c2226075b537",
     "title" : "Phone Calls",
     "numberOfEvents" : 2,
     "action" : true
   }, {
-    "uuid" : "6967dc92-b0f2-46c1-a373-bee5a2fe04fd",
-    "title" : "Create Lead",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "6ba5ba0e-c263-4ff8-98ad-3ee0cb5af484",
-    "title" : "Create Case",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "6ce06ea9-c8b3-409b-bedd-febbe73acdf6",
-    "title" : "Create Phone Call",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "7fce8ef1-3a4f-4f5e-8886-5c53fb393689",
-    "title" : "Tasks",
-    "numberOfEvents" : 2,
-    "action" : true
-  }, {
-    "uuid" : "7fd00d4a-4aac-4ecb-b7b2-23d01174a4a1",
+    "uuid" : "35b6054a-4490-4870-942b-d38d1ee5cb26",
     "title" : "Create Opportunity",
     "numberOfEvents" : 0,
     "action" : true
   }, {
-    "uuid" : "99cda378-cf97-4563-a987-bbd2fe3dd8fc",
+    "uuid" : "3d71d9f6-90a7-4f6c-a113-a338c716be69",
+    "title" : "Create Lead",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "3e480e89-5f52-481d-bd96-0befdf623466",
+    "title" : "Create Task",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "4f72d4c3-3f45-49d9-bcd5-d27d8804e522",
+    "title" : "Tasks",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "564dfcbb-6e21-4a4c-9a5c-5f50bfa9e31a",
     "title" : "Contacts",
     "numberOfEvents" : 2,
     "action" : true
   }, {
-    "uuid" : "9aea9b28-47c8-4b13-963f-c23ca38352c2",
-    "title" : "Create Account",
-    "numberOfEvents" : 0,
-    "action" : true
-  }, {
-    "uuid" : "cd4fd710-0215-460b-98cd-7da7ab5fe793",
+    "uuid" : "79c9d072-fe91-468d-a018-e64a545be625",
     "title" : "Appointments",
     "numberOfEvents" : 2,
     "action" : true
   }, {
-    "uuid" : "f74ea469-e6b3-429b-9545-29b44882c80f",
+    "uuid" : "80c53f19-9361-42cc-960c-d98d76a5eddb",
+    "title" : "Create Appointment",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "8cfcee5f-a58e-482a-a03b-d76aa5aa26e9",
     "title" : "Opportunities",
     "numberOfEvents" : 2,
     "action" : true
   }, {
-    "uuid" : "f7ba2d1d-2a43-40f9-86b4-3b7d2772e4ef",
+    "uuid" : "92abdacf-7e98-458c-90d0-edf4a83610b2",
+    "title" : "Leads",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "a3cf3f5f-184a-486b-a739-2a8be70821fc",
+    "title" : "Create Case",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "b063f736-60bb-4bee-89ad-a302ee9de0dc",
+    "title" : "Create Phone Call",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "b271e67b-6ed4-4cc5-b7c7-a5ad3c3e9e90",
+    "title" : "Create Contact",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "b7bbd9b2-2f72-4ae8-8d1b-a762effdcda3",
     "title" : "Cases",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "c809278d-075b-4f85-af25-68d7561a5542",
+    "title" : "Create Account",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "f76a1697-4fc7-43d5-8ff5-eac2c0613a1b",
+    "title" : "Accounts",
     "numberOfEvents" : 2,
     "action" : true
   } ],
