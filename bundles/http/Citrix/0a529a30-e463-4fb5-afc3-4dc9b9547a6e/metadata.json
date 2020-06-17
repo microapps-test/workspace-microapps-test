@@ -9,7 +9,7 @@
   "categories" : [ "INTERNAL_DEVELOPMENT" ],
   "created" : "2020-06-16T12:28:57",
   "supportsOAuthForActions" : true,
-  "i18nLanguages" : [ "en" ],
+  "i18nLanguages" : [ "de", "en", "es", "fr", "it", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
     "uuid" : "243798b2-fe63-4058-9088-9e815e6e5e5d",
     "title" : "Accounts",
