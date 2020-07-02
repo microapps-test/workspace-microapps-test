@@ -173,6 +173,9 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
     except subprocess.CalledProcessError as e:
         _jira_comment('Failed to create {} directory\n{}\n'
         'Please contact Jenkins Admin: {}'.format(tempDir, e, ADMIN))
+    except zipfile.BadZipFile as e:
+        _jira_comment('Failed to unzip the .mapp file attachment\n'
+        'Please make sure that the file is of the correct type:\n{}'.format(e))
 
     # edit the metadata file
     exportId = ""
