@@ -31,7 +31,7 @@ SVCACCT_NAME = args.svcacctName
 SVCACCT_PWD = args.svcacctPwd
 ISSUE_ID = args.issueId
 AUTH = HTTPBasicAuth(SVCACCT_NAME, SVCACCT_PWD)
-HOST = "https://issues-test.do.citrite.net"
+HOST = "https://issues.citrite.net"
 SUPPORT_URL = "customfield_12635"
 DOCUMENT_URL = "customfield_31030"
 PRIVACY_URL = "customfield_31032"
@@ -266,7 +266,7 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
         if "change" in proc.stdout:
             subprocess.run('git commit -sm "microapp submission - see issue {} on {}"'.format(
                 ISSUE_ID, HOST), shell=True, check=True)
-            subprocess.run('git push https://{}:{}@github.com/{}.git HEAD:{}'.format(
+            subprocess.run('git push -f https://{}:{}@github.com/{}.git HEAD:{}'.format(
                 GITHUB_USERNAME, GITHUB_PASSWORD, BUNDLE_REPO, ISSUE_ID), shell=True, check=True)
 
             # if there isn't already a pull request, then create one
@@ -289,9 +289,7 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
 def main():
     # create new or checkout existing branch
     try:
-        subprocess.run('git fetch origin -a', shell=True, check=True)
-        cmd = 'git branch -a | grep {} && git checkout --track origin/{} || git checkout -b {}'.format(
-            ISSUE_ID, ISSUE_ID, ISSUE_ID)
+        cmd = 'git checkout -b {}'.format(ISSUE_ID)
         subprocess.run(cmd, shell=True, check=True)
     except subprocess.CalledProcessError as e:
         _transition(BACK_TO_IN_PROGRESS)
