@@ -40,6 +40,19 @@ VENDOR = "customfield_31230"
 HEADERS = {'Content-Type': 'application/json'}
 METADATA_FILE = "metadata.json"
 
+# JIRA TRANSITIONS:
+# START_WORK = "101"
+# BACK_TO_PROCESSING = "251"
+# CANCELLED = "181"
+# DONE = "191"
+# RESUME_WORK = "171"
+# TO_OPEN = "41"
+# TO_PROCESSING = "221"
+BACK_TO_IN_PROGRESS = "231"
+IN_REVIEW = "241"
+NEEDS_INFO = "211"
+
+
 # GITHUB VARIABLES:
 # remote GitHub repo where submissions are pushed for review
 GITHUB_USERNAME = args.githubUsername
@@ -68,6 +81,22 @@ def _jira_comment(comment, statusCode=1):
     exit(statusCode)
 
 
+def _transition(transitionId):
+    payload = json.dumps({
+        "transition": {"id": transitionId}
+    })
+    try:
+        response = requests.get(
+            url='{}/rest/api/2/issue/{}/transitions'.format(HOST, ISSUE_ID),
+            headers=HEADERS,
+            auth=AUTH,
+            data=payload
+        )
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        _jira_comment('Failed to transition issue.\n{}'.format(e))
+
+
 def _pr_exists():
     url = 'https://{}:{}@api.github.com/repos/{}/pulls'.format(GITHUB_USERNAME, GITHUB_API_KEY, BUNDLE_REPO)
     headers = {'Content-Type': 'application/json'}
@@ -83,8 +112,9 @@ def _pr_exists():
         )
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to contact GitHub repo:\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(e, ADMIN))
     else:
         jsonData = response.json()
         if len(jsonData) == 0:
@@ -110,12 +140,14 @@ def _raise_pr():
         )
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create PR on bundle repo:\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(e, ADMIN))
     else:
         pullRequestUrl = response.json()["html_url"]
+        _transition(IN_REVIEW)
         _jira_comment('Jenkins job successfully created pull request.\n'
-        'You can view the pull request at {}'.format(pullRequestUrl), 0)
+                      'You can view the pull request at {}'.format(pullRequestUrl), 0)
 
 
 def get_mapp_file(issueJson):
@@ -123,16 +155,19 @@ def get_mapp_file(issueJson):
     mappFile = ""
     numAttachments = len(issueJson['fields']['attachment'])
     if numAttachments > 1:
+        _transition(NEEDS_INFO)
         _jira_comment("Only attach a single file.\n"
-        "Job will be submitted once extra files are removed.")
+                      "Job will be submitted once extra files are removed.")
     elif numAttachments < 1:
+        _transition(NEEDS_INFO)
         _jira_comment("must attach a .mapp file.\n"
-        "Job will be submitted once a .mapp file is attached.")
+                      "Job will be submitted once a .mapp file is attached.")
     else:
         mappFile = issueJson['fields']['attachment'][0]['filename']
         if not mappFile.endswith('.mapp'):
+            _transition(NEEDS_INFO)
             _jira_comment("Attachment must be a .mapp file.\n"
-            "Job will be submitted once a .mapp file is attached.")
+                          "Job will be submitted once a .mapp file is attached.")
         url = issueJson['fields']['attachment'][0]['content']
         try:
             response = requests.get(
@@ -141,8 +176,9 @@ def get_mapp_file(issueJson):
             )
             response.raise_for_status()
         except requests.exceptions.RequestException as e:
+            _transition(BACK_TO_IN_PROGRESS)
             _jira_comment('Failed to download attachment\n{}\n'
-            'Please contact Jenkins Admin: {}'.format(e, ADMIN))
+                          'Please contact Jenkins Admin: {}'.format(e, ADMIN))
         with open(mappFile, 'wb') as fout:
             fout.write(response.content)
     return mappFile
@@ -157,8 +193,9 @@ def get_issue():
         )
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to get Jira issue\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(e, ADMIN))
     else:
         return response.json()
 
@@ -171,11 +208,13 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
             subprocess.run('[ -d "{}" ] || mkdir "{}"'.format(tempDir, tempDir), shell=True, check=True)
             zin.extractall(tempDir)
     except subprocess.CalledProcessError as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create {} directory\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(tempDir, e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(tempDir, e, ADMIN))
     except zipfile.BadZipFile as e:
+        _transition(NEEDS_INFO)
         _jira_comment('Failed to unzip the .mapp file attachment\n'
-        'Please make sure that the file is of the correct type:\n{}'.format(e))
+                      'Please make sure that the file is of the correct type:\n{}'.format(e))
 
     # edit the metadata file
     exportId = ""
@@ -194,11 +233,13 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
             json.dump(jsoncontents, fin, indent=4)
             fin.truncate()
     except IOError as e:
+        _transition(NEEDS_INFO)
         _jira_comment('{} file not found in .mapp file\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(METADATA_FILE, e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(METADATA_FILE, e, ADMIN))
     except KeyError as e:
+        _transition(NEEDS_INFO)
         _jira_comment('Malformed {} file. Missing key\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(METADATA_FILE, e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(METADATA_FILE, e, ADMIN))
 
     # place files in directory structure: ./http/<vendor>/<exportid>
     try:
@@ -211,8 +252,9 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
         subprocess.run('rsync -a {}/ {}/'.format(tempDir, exportDir), shell=True, check=True)
         subprocess.run('mv {} {}'.format(mappFile, exportDir), shell=True, check=True)
     except subprocess.CalledProcessError as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create directory structure\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(e, ADMIN))
 
     # add files, and create commit if there are any changes
     try:
@@ -230,16 +272,18 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
             # if there isn't already a pull request, then create one
             pr = _pr_exists()
             if pr[0]:
+                _transition(IN_REVIEW)
                 _jira_comment("New commit created on existing PR at {}".format(pr[1]), 0)
             else:
                 _raise_pr()
-
     except IOError as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('{} file not found.\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(exportDir, e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(exportDir, e, ADMIN))
     except subprocess.CalledProcessError as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to push to bundle repo: https://github.com/{}.git\n{}\n'
-        'Please contact Jenkins Admin: {}'.format(BUNDLE_REPO, e, ADMIN))
+                      'Please contact Jenkins Admin: {}'.format(BUNDLE_REPO, e, ADMIN))
 
 
 def main():
@@ -250,6 +294,7 @@ def main():
             ISSUE_ID, ISSUE_ID, ISSUE_ID)
         subprocess.run(cmd, shell=True, check=True)
     except subprocess.CalledProcessError as e:
+        _transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create new branch on the bundle repo:\n{}'.format(e))
 
     # get the issue in json format and extract the necessary metadata
