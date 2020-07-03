@@ -81,12 +81,12 @@ def _jira_comment(comment, statusCode=1):
     exit(statusCode)
 
 
-def _transition(transitionId):
+def _jira_transition(transitionId):
     payload = json.dumps({
         "transition": {"id": transitionId}
     })
     try:
-        response = requests.get(
+        response = requests.post(
             url='{}/rest/api/2/issue/{}/transitions'.format(HOST, ISSUE_ID),
             headers=HEADERS,
             auth=AUTH,
@@ -113,7 +113,7 @@ def _pr_exists_on_branch():
         )
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to contact GitHub repo:\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(e, ADMIN))
     else:
@@ -145,12 +145,12 @@ def _raise_pr():
         )
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create PR on bundle repo:\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(e, ADMIN))
     else:
         pullRequestUrl = response.json()["html_url"]
-        _transition(IN_REVIEW)
+        _jira_transition(IN_REVIEW)
         _jira_comment('Jenkins job successfully created pull request.\n'
                       'You can view the pull request at {}'.format(pullRequestUrl), 0)
 
@@ -160,17 +160,17 @@ def get_mapp_file(issueJson):
     mappFile = ""
     numAttachments = len(issueJson['fields']['attachment'])
     if numAttachments > 1:
-        _transition(NEEDS_INFO)
+        _jira_transition(NEEDS_INFO)
         _jira_comment("Only attach a single file.\n"
                       "Job will be submitted once extra files are removed.")
     elif numAttachments < 1:
-        _transition(NEEDS_INFO)
+        _jira_transition(NEEDS_INFO)
         _jira_comment("must attach a .mapp file.\n"
                       "Job will be submitted once a .mapp file is attached.")
     else:
         mappFile = issueJson['fields']['attachment'][0]['filename']
         if not mappFile.endswith('.mapp'):
-            _transition(NEEDS_INFO)
+            _jira_transition(NEEDS_INFO)
             _jira_comment("Attachment must be a .mapp file.\n"
                           "Job will be submitted once a .mapp file is attached.")
         url = issueJson['fields']['attachment'][0]['content']
@@ -181,7 +181,7 @@ def get_mapp_file(issueJson):
             )
             response.raise_for_status()
         except requests.exceptions.RequestException as e:
-            _transition(BACK_TO_IN_PROGRESS)
+            _jira_transition(BACK_TO_IN_PROGRESS)
             _jira_comment('Failed to download attachment\n{}\n'
                           'Please contact Jenkins Admin: {}'.format(e, ADMIN))
         with open(mappFile, 'wb') as fout:
@@ -198,7 +198,7 @@ def get_issue():
         )
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to get Jira issue\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(e, ADMIN))
     else:
@@ -213,11 +213,11 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
             subprocess.run('[ -d "{}" ] || mkdir "{}"'.format(tempDir, tempDir), shell=True, check=True)
             zin.extractall(tempDir)
     except subprocess.CalledProcessError as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create {} directory\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(tempDir, e, ADMIN))
     except zipfile.BadZipFile as e:
-        _transition(NEEDS_INFO)
+        _jira_transition(NEEDS_INFO)
         _jira_comment('Failed to unzip the .mapp file attachment\n'
                       'Please make sure that the file is of the correct type:\n{}'.format(e))
 
@@ -238,11 +238,11 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
             json.dump(jsoncontents, fin, indent=4)
             fin.truncate()
     except IOError as e:
-        _transition(NEEDS_INFO)
+        _jira_transition(NEEDS_INFO)
         _jira_comment('{} file not found in .mapp file\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(METADATA_FILE, e, ADMIN))
     except KeyError as e:
-        _transition(NEEDS_INFO)
+        _jira_transition(NEEDS_INFO)
         _jira_comment('Malformed {} file. Missing key\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(METADATA_FILE, e, ADMIN))
 
@@ -257,7 +257,7 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
         subprocess.run('rsync -a {}/ {}/'.format(tempDir, exportDir), shell=True, check=True)
         subprocess.run('mv {} {}'.format(mappFile, exportDir), shell=True, check=True)
     except subprocess.CalledProcessError as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create directory structure\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(e, ADMIN))
 
@@ -277,16 +277,16 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
             # if there isn't already a pull request, then create one
             pr = _pr_exists_on_branch()
             if pr[0]:
-                _transition(IN_REVIEW)
+                _jira_transition(IN_REVIEW)
                 _jira_comment("New commit created on existing PR at {}".format(pr[1]), 0)
             else:
                 _raise_pr()
     except IOError as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('{} file not found.\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(exportDir, e, ADMIN))
     except subprocess.CalledProcessError as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to push to bundle repo: https://github.com/{}.git\n{}\n'
                       'Please contact Jenkins Admin: {}'.format(BUNDLE_REPO, e, ADMIN))
 
@@ -297,7 +297,7 @@ def main():
         cmd = 'git checkout -b {}'.format(ISSUE_ID)
         subprocess.run(cmd, shell=True, check=True)
     except subprocess.CalledProcessError as e:
-        _transition(BACK_TO_IN_PROGRESS)
+        _jira_transition(BACK_TO_IN_PROGRESS)
         _jira_comment('Failed to create new branch on the bundle repo:\n{}'.format(e))
 
     # get the issue in json format and extract the necessary metadata
