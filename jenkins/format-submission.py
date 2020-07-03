@@ -97,7 +97,8 @@ def _transition(transitionId):
         _jira_comment('Failed to transition issue.\n{}'.format(e))
 
 
-def _pr_exists():
+# returns true if request exists between issue branch and master branch
+def _pr_exists_on_branch():
     url = 'https://{}:{}@api.github.com/repos/{}/pulls'.format(GITHUB_USERNAME, GITHUB_API_KEY, BUNDLE_REPO)
     headers = {'Content-Type': 'application/json'}
     payload = json.dumps({
@@ -118,9 +119,13 @@ def _pr_exists():
     else:
         jsonData = response.json()
         if len(jsonData) == 0:
-            return False, ""
-        else:
-            return True, jsonData[0]['html_url']
+            return False, ""  
+        for index, pullRequest in enumerate(jsonData):
+            if (pullRequest["head"]["label"] == '{}:{}'.format(GITHUB_USERNAME, ISSUE_ID)
+            and pullRequest["base"]["label"] == '{}:master'.format(GITHUB_USERNAME)
+            and pullRequest["state"] == 'open'):
+                return True, jsonData[index]['html_url']
+        return False, ""
 
 
 def _raise_pr():
@@ -270,7 +275,7 @@ def format_bundle(mappFile, privacyUrl, documentationUrl, termsOfUseUrl, support
                 GITHUB_USERNAME, GITHUB_PASSWORD, BUNDLE_REPO, ISSUE_ID), shell=True, check=True)
 
             # if there isn't already a pull request, then create one
-            pr = _pr_exists()
+            pr = _pr_exists_on_branch()
             if pr[0]:
                 _transition(IN_REVIEW)
                 _jira_comment("New commit created on existing PR at {}".format(pr[1]), 0)
