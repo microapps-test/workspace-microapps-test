@@ -1,0 +1,38 @@
+{
+  "applications": [],
+  "services": [
+    {
+      "id": 6,
+      "uuid": "356f5640-6c5a-4b31-865c-b66d4cf58a3f",
+      "version": 0,
+      "title": "Workday Request PTO",
+      "serviceType": "EXTERNAL_SERVICE",
+      "group": "EXTERNAL_SERVICE:com.sapho.services.workday.WorkdayRequestPtoService",
+      "updatePending": false,
+      "configurationPending": false,
+      "secretsMissing": false,
+      "configMissing": false,
+      "schemaName": "microapps_workday_request_pto",
+      "configuration": {
+        "trackingUuid": "ac9c656a-7a65-463d-9a58-e777d44628f5",
+        "entities": [],
+        "schedule": [],
+        "serviceName": "Workday Request PTO",
+        "serviceKey": "com.sapho.services.workday.WorkdayRequestPtoService",
+        "serviceVersion": "0.1.0",
+        "idleState": false,
+        "serviceType": "EXTERNAL_SERVICE"
+      },
+      "context": {},
+      "tables": [],
+      "relationships": [],
+      "fullyConfigured": true
+    }
+  ],
+  "notifications": [],
+  "resolvers": [],
+  "modelConfiguration": {},
+  "translationChecksum" : "D8CB78F35EE35A2B041654B553A0EC90",
+  "appliedSappUpgrades": [],
+  "buildVersion": "1.0.0-SNAPSHOT"
+}
