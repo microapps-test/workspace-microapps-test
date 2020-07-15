@@ -7,7 +7,7 @@
       "version": 0,
       "title": "Workday Request PTO",
       "serviceType": "EXTERNAL_SERVICE",
-      "group": "EXTERNAL_SERVICE:com.sapho.services.workday.WorkdayRequestPtoService",
+      "group": "EXTERNAL_SERVICE:com.sapho.services.workday.pto.WorkdayRequestPtoService",
       "updatePending": false,
       "configurationPending": false,
       "secretsMissing": false,
@@ -18,7 +18,7 @@
         "entities": [],
         "schedule": [],
         "serviceName": "Workday Request PTO",
-        "serviceKey": "com.sapho.services.workday.WorkdayRequestPtoService",
+        "serviceKey": "com.sapho.services.workday.pto.WorkdayRequestPtoService",
         "serviceVersion": "0.1.0",
         "idleState": false,
         "serviceType": "EXTERNAL_SERVICE"

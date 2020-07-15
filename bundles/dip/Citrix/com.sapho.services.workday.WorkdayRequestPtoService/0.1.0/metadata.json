@@ -1,7 +1,7 @@
 {
   "type" : "DIP",
   "vendor" : "Citrix",
-  "id" : "com.sapho.services.workday.WorkdayRequestPtoService",
+  "id" : "com.sapho.services.workday.pto.WorkdayRequestPtoService",
   "version" : "0.1.0",
   "title" : "Workday Request PTO MICROAPP-10418-request-pto",
   "description" : "",
