@@ -8,10 +8,15 @@
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Workday.53a6fa429a68457228ca68adf0c387e6.svg",
   "masVersion" : "1.0.0-SNAPSHOT",
   "categories" : [ "INTERNAL_DEVELOPMENT" ],
-  "created" : "2020-07-10T12:31:06",
+  "created" : "2020-07-15T09:54:46",
   "supportsOAuthForActions" : false,
-  "i18nLanguages" : ["en"],
-  "apps" : [ ],
+  "i18nLanguages" : [ "en" ],
+  "apps" : [ {
+    "uuid" : "2fc71ed1-3727-40c5-97dc-341dc9ff6c6a",
+    "title" : "Create PTO Request",
+    "numberOfEvents" : 0,
+    "action" : false
+  } ],
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
