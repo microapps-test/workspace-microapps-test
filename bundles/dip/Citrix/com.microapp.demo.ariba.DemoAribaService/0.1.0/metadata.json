@@ -3,16 +3,16 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.ariba.DemoAribaService",
   "version" : "0.1.0",
-  "title" : "Demo SAP Ariba",
+  "title" : "MICROAPP-9459 SAP Ariba integration",
   "description" : "",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Ariba.51e0c216c1507cb16edb31bc47030a9e.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "DEMO" ],
-  "created" : "2020-04-09T07:12:20",
+  "created" : "2020-07-16T12:03:03",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "de", "en", "es", "fr", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "a36f9ef5-084a-4771-a60f-f7e25c02131a",
+    "uuid" : "1d27bf66-9247-49a2-8255-fba9528fdc0f",
     "title" : "Requisition Approval (Demo)",
     "numberOfEvents" : 4,
     "action" : false
@@ -20,6 +20,6 @@
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }

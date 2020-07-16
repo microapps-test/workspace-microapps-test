@@ -3,28 +3,28 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.google.directory.DemoGoogleDirectoryService",
   "version" : "0.1.0",
-  "title" : "Demo G Suite Directory",
+  "title" : "MICROAPP-9459 G Suite Directory integration",
   "description" : "",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/G-Suite.8c072bd908962e58deb2abedbc8b9cd2.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "DEMO" ],
-  "created" : "2020-04-09T07:12:04",
+  "created" : "2020-07-16T12:02:50",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "de", "en", "es", "fr", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "78c6777c-3e90-4d82-a96e-e34127e92e3c",
-    "title" : "Directory Details (Demo)",
-    "numberOfEvents" : 2,
-    "action" : false
-  }, {
-    "uuid" : "be5dcabf-3941-4f80-afc9-b907cb656d8d",
+    "uuid" : "154eb817-5fcb-4469-a6d0-f5c969f6ab58",
     "title" : "Directory Admin (Demo)",
     "numberOfEvents" : 0,
     "action" : true
+  }, {
+    "uuid" : "7393ad6b-8498-4998-ad97-0e7b56bc775a",
+    "title" : "Directory Details (Demo)",
+    "numberOfEvents" : 2,
+    "action" : false
   } ],
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }

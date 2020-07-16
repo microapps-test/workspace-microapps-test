@@ -3,21 +3,21 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.jira.DemoJiraService",
   "version" : "0.1.0",
-  "title" : "Demo Jira",
+  "title" : "MICROAPP-9459 Jira integration",
   "description" : "",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/JIRA.35cdd2008e8e83479745e5635da3d7f1.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "DEMO" ],
-  "created" : "2020-04-09T07:12:10",
+  "created" : "2020-07-16T12:02:54",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "de", "en", "es", "fr", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "359fd377-68ae-4945-a0af-f42e16831b5d",
+    "uuid" : "3f9016fb-e361-4525-8486-0e1d90df48ce",
     "title" : "My Tickets (Demo)",
     "numberOfEvents" : 2,
     "action" : false
   }, {
-    "uuid" : "ae9e5a97-583c-4378-8c15-f86ba27617d5",
+    "uuid" : "b0cc7605-ee78-4239-a001-d6101346a6d7",
     "title" : "Create Ticket (Demo)",
     "numberOfEvents" : 0,
     "action" : true
@@ -25,6 +25,6 @@
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }

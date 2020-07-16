@@ -3,21 +3,21 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.salesforce.DemoSalesforceService",
   "version" : "0.1.0",
-  "title" : "Demo Salesforce",
+  "title" : "MICROAPP-9459 Salesforce integration",
   "description" : "",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Salesforce.43b28006ce57d083904eaa95297a166d.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "DEMO" ],
-  "created" : "2020-04-09T07:12:16",
+  "created" : "2020-07-16T12:03:01",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "de", "en", "es", "fr", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "1d6abde8-cec4-4a60-a390-e6b85e0dc946",
+    "uuid" : "72b46242-21e1-420b-9654-fdb8b419cb97",
     "title" : "Approvals (Demo)",
     "numberOfEvents" : 3,
     "action" : false
   }, {
-    "uuid" : "dcac6581-11b8-46c9-bcf3-f014ec4f93bb",
+    "uuid" : "a9ba0680-4832-479b-85b8-cd537fd2efa1",
     "title" : "My Opportunities (Demo)",
     "numberOfEvents" : 2,
     "action" : true
@@ -25,6 +25,6 @@
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }

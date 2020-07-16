@@ -3,28 +3,28 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.concur.DemoConcurService",
   "version" : "0.1.0",
-  "title" : "Demo SAP Concur",
+  "title" : "MICROAPP-9459 SAP Concur integration",
   "description" : "",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Concur.7f4236c35298ebbe5598db9a66e70273.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "DEMO" ],
-  "created" : "2020-04-09T07:12:26",
+  "created" : "2020-07-16T12:03:07",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "de", "en", "es", "fr", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "4c363835-7e4e-4c76-aad6-d272d5f32fb1",
-    "title" : "Approvals (Demo)",
-    "numberOfEvents" : 3,
-    "action" : false
-  }, {
-    "uuid" : "d4ca460c-03af-4b32-9f6c-fb600ee3cd63",
+    "uuid" : "7e4fc6a4-21bf-41d4-88d2-fb37a5b6bc41",
     "title" : "Submit Quick Expense (Demo)",
     "numberOfEvents" : 1,
     "action" : true
+  }, {
+    "uuid" : "d4d65600-a172-4e1d-a0cf-26f0eb611ea3",
+    "title" : "Approvals (Demo)",
+    "numberOfEvents" : 3,
+    "action" : false
   } ],
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }

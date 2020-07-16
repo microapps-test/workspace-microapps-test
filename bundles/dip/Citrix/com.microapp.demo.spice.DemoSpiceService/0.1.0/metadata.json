@@ -3,16 +3,15 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.spice.DemoSpiceService",
   "version" : "0.1.0",
-  "title" : "Dev Spice",
+  "title" : "MICROAPP-9459 Spice integration",
   "description" : "",
-  "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/HTTP.b662c61cecf295906ef0af18be93b25a.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "INTERNAL_DEVELOPMENT" ],
-  "created" : "2020-04-09T07:02:48",
+  "created" : "2020-07-16T12:25:25",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "de", "en", "es", "fr", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "5ed83783-b11f-46dd-85d1-b26cad2ca25e",
+    "uuid" : "f553f54c-5be0-4879-a749-ea935817c4c4",
     "title" : "Arrakis",
     "numberOfEvents" : 0,
     "action" : true
@@ -20,6 +19,6 @@
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }

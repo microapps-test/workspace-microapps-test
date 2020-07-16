@@ -3,16 +3,16 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.workday.DemoWorkdayService",
   "version" : "0.1.0",
-  "title" : "Demo Workday",
+  "title" : "MICROAPP-9459 Workday integration",
   "description" : "",
   "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Workday.53a6fa429a68457228ca68adf0c387e6.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "DEMO" ],
-  "created" : "2020-04-09T07:12:41",
+  "created" : "2020-07-16T12:03:17",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "de", "en", "es", "fr", "ja", "nl", "pt-BR", "zh-CN" ],
   "apps" : [ {
-    "uuid" : "c4b4e924-4af9-454a-b316-0c797faba9fa",
+    "uuid" : "f70a4ea5-cfc7-4ec7-842b-d7eceac14918",
     "title" : "Approvals (Demo)",
     "numberOfEvents" : 1,
     "action" : false
@@ -44,6 +44,6 @@
   } ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }

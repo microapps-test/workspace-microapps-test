@@ -3,16 +3,15 @@
   "vendor" : "Citrix",
   "id" : "com.microapp.demo.invoices.DemoInvoicesService",
   "version" : "0.1.0",
-  "title" : "DEV Invoices",
+  "title" : "MICROAPP-9459 Invoices integration",
   "description" : "",
-  "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/HTTP.b662c61cecf295906ef0af18be93b25a.svg",
-  "masVersion" : "1.9.17-SNAPSHOT",
+  "masVersion" : "1.0.0-SNAPSHOT.",
   "categories" : [ "INTERNAL_DEVELOPMENT" ],
-  "created" : "2020-04-09T06:38:41",
+  "created" : "2020-07-16T12:25:17",
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "en" ],
   "apps" : [ {
-    "uuid" : "e12dbc49-7677-4762-98a7-785c18cf80fd",
+    "uuid" : "4b76038b-d829-4126-b4c3-5b2a7a8f8c92",
     "title" : "Invoices integration",
     "numberOfEvents" : 0,
     "action" : false
@@ -20,6 +19,6 @@
   "vaResolvers" : [ ],
   "tags" : [ {
     "tag" : "helpUrl",
-    "value" : "help.html"
+    "value" : "https://docs.citrix.com/en-us/citrix-microapps.html"
   } ]
 }
