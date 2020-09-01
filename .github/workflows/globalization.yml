@@ -1,11 +1,6 @@
 name: Globalization
-on:
-  pull_request:
-    branches:
-      - master
-  push:
-    branches:
-      - master
+on: push
+
 jobs:
   scan:
     runs-on: ubuntu-latest
