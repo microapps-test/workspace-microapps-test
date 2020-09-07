@@ -1,0 +1,3204 @@
+{
+  "applications" : [ {
+    "appVersion" : {
+      "id" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+      "serviceId" : 2,
+      "version" : 333,
+      "pages" : [ {
+        "id" : "f42ea4c4-4bf1-4c96-bd91-804b17489ab6",
+        "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+        "type" : "LIST",
+        "components" : [ {
+          "type" : "TABLE",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : null,
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "componentTableId" : 2,
+          "defaultLimit" : 20,
+          "parameters" : {
+            "tableconfig" : {
+              "noDataText" : "94c10306-fdec-4c60-907e-d9b92e28997a",
+              "tableid" : 2,
+              "show_1_to_n" : "0",
+              "columns" : [ {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "label" : "67c35b51-d7a1-4b49-bc79-961757aa2d7c",
+                "id" : "fc184a98-e771-467b-8473-f4d0fd80d80f",
+                "tableid" : 2,
+                "columnid" : 5,
+                "urlTemplate" : null,
+                "format" : "",
+                "tableColumn" : {
+                  "columnType" : "STRING"
+                },
+                "conditional_format" : "null"
+              } ],
+              "images" : [ ],
+              "groupByColumns" : [ ],
+              "linkpageid" : "035952c0-8586-4899-8b3f-ad5cad6c505a",
+              "hideIfEmpty" : true,
+              "sortable" : 1,
+              "alignment" : "left"
+            },
+            "query" : null,
+            "prefill" : null,
+            "order" : null
+          },
+          "id" : "a4895dc7-8d62-4221-8d17-8c1b765cdffc",
+          "defaultvalue" : null,
+          "displayorder" : 1,
+          "defaultLimit" : 20
+        } ],
+        "title" : "1c0315b2-06ed-4e4f-8f4f-6850b00620c1",
+        "logicConfiguration" : [ ],
+        "parameters" : { },
+        "tableid" : 2,
+        "datasourceid" : 2,
+        "pagetype" : "List",
+        "pagetype" : "List"
+      }, {
+        "id" : "e427859b-0895-42a4-911b-a330190e2f0c",
+        "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+        "type" : "DETAIL",
+        "components" : [ {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 43,
+          "required" : false,
+          "textType" : null,
+          "label" : "506c71fc-8770-4ea7-ad81-a4b2b4673ed4",
+          "format" : "yes-no",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "hideIfEmpty" : false,
+            "visible" : 1,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "1683a347-d0ee-4c1a-85c5-cdea0f846141",
+          "defaultvalue" : null,
+          "displayorder" : 4
+        }, {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 46,
+          "required" : false,
+          "textType" : 0,
+          "label" : "0ced3367-19d6-483b-adb7-c9d03b183fbd",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "name" : "Desc"
+          },
+          "id" : "d204b706-df37-4d01-be0f-31e63fa5cf05",
+          "defaultvalue" : null,
+          "displayorder" : 3
+        }, {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 48,
+          "required" : false,
+          "textType" : null,
+          "label" : "3b6541e1-a085-49ee-81fa-b2555830787c",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "hideIfEmpty" : true,
+            "visible" : 1,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "e5236439-6b18-4cf3-81ed-9e35c275c998",
+          "defaultvalue" : null,
+          "displayorder" : 5
+        }, {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 56,
+          "required" : false,
+          "textType" : 0,
+          "label" : "4d126651-af43-47ac-a106-886a86d80164",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "name" : "Name"
+          },
+          "id" : "7019b3b4-10db-4c07-9720-cf2fe815f348",
+          "defaultvalue" : null,
+          "displayorder" : 1
+        }, {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 60,
+          "required" : false,
+          "textType" : null,
+          "label" : "78f7d0bf-bc02-420d-b441-8a207015ca4d",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ {
+                "type" : "GOTO_URL",
+                "label" : "Go to URL",
+                "id" : "op_z2iq9v",
+                "urlTemplate" : "{{url}}"
+              } ]
+            },
+            "hideIfEmpty" : false,
+            "visible" : 1,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "f565feac-e9bc-416e-966a-5142469d8b49",
+          "defaultvalue" : null,
+          "displayorder" : 2
+        }, {
+          "type" : "TABLE",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : "7d1e8b0b-cb73-483b-b071-28f026dd7bf8",
+          "format" : "",
+          "foreignKeyId" : 4,
+          "parentComponentId" : null,
+          "componentTableId" : 4,
+          "defaultLimit" : 20,
+          "parameters" : {
+            "tableconfig" : {
+              "noDataText" : "98ea09c5-b21a-4c09-b115-61e209b37dcb",
+              "tableid" : 4,
+              "sqlorder" : {
+                "id" : "f4a97cc4-f9c2-45b4-85bd-645ccedb1b93",
+                "constraints" : {
+                  "type" : "TERM",
+                  "constraint" : {
+                    "tableId" : 4,
+                    "columnId" : 13,
+                    "order" : "DESC",
+                    "ignoredWhenValueIsNull" : false
+                  }
+                },
+                "autojoins" : false
+              },
+              "show_1_to_n" : "1",
+              "columns" : [ {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "label" : "dc86e5ba-8ba9-489f-b191-0f538818a9f5",
+                "id" : "n8tn05",
+                "tableid" : 4,
+                "columnid" : 13,
+                "urlTemplate" : null,
+                "format" : "none",
+                "tableColumn" : {
+                  "columnType" : "TIMESTAMP"
+                },
+                "conditional_format" : "null"
+              }, {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "label" : "9c38e7cb-6b5e-4196-9ad5-36dca4e8c5ca",
+                "id" : "1iqm9h",
+                "tableid" : 4,
+                "columnid" : 14,
+                "urlTemplate" : null,
+                "format" : "none",
+                "tableColumn" : {
+                  "columnType" : "STRING"
+                },
+                "conditional_format" : "null"
+              }, {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "label" : "b6c88de1-1011-49d8-ae2b-44a306886675",
+                "id" : "4pf7r7",
+                "tableid" : 4,
+                "columnid" : 17,
+                "urlTemplate" : null,
+                "format" : "none",
+                "tableColumn" : {
+                  "columnType" : "STRING"
+                },
+                "conditional_format" : "null"
+              } ],
+              "images" : [ ],
+              "groupByColumns" : [ ],
+              "hideIfEmpty" : true,
+              "sortable" : 1,
+              "alignment" : "left"
+            },
+            "query" : null,
+            "prefill" : null,
+            "order" : null
+          },
+          "id" : "355e2773-82dd-4eab-9401-780349cf6d17",
+          "defaultvalue" : null,
+          "displayorder" : 8,
+          "defaultLimit" : 20
+        }, {
+          "type" : "BUTTON",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : "1e4bb6d7-0947-400a-abb6-0cab59c3ea64",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "operationStack" : {
+              "operations" : [ {
+                "type" : "SERVICE_ACTION",
+                "label" : "Run Service Action",
+                "id" : "op_tr926l",
+                "children" : [ ],
+                "serviceAction" : {
+                  "type" : "GWSC",
+                  "id" : "54cd3581-ce8e-43ac-ad23-e62f95611e58",
+                  "name" : "Add Comment to a Card",
+                  "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+                  "parameters" : [ {
+                    "id" : "6bde170a-fb3f-4f70-a875-79f6a2e01564",
+                    "parameterId" : "card_id",
+                    "valueType" : "COLUMN",
+                    "columnId" : 51
+                  }, {
+                    "id" : "76a303fc-ec4e-4ea5-8344-50dd07b5d63d",
+                    "parameterId" : "comment_text",
+                    "valueType" : "COMPONENT",
+                    "componentId" : "3239d328-3eea-48cf-9df8-e0d6b4c74af3"
+                  } ],
+                  "flatDataServiceActionId" : 1,
+                  "serviceActionId" : "72a911f4-a046-4962-8da1-403852f2e721",
+                  "serviceId" : 2
+                },
+                "serviceId" : 2
+              } ]
+            },
+            "tone" : "PRIMARY",
+            "size" : "BABY",
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 0,
+            "showInBladeFooter" : false,
+            "order" : null
+          },
+          "id" : "0d4c0fe8-094b-47b3-b37d-5534fcd0b6a7",
+          "defaultvalue" : null,
+          "displayorder" : 7
+        }, {
+          "type" : "TEXT_AREA",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : true,
+          "textType" : null,
+          "label" : "011c30ae-2949-4f49-9c79-7c09506b7cd6",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "field_width" : "large",
+            "visible" : 1,
+            "mapToDataColumn" : false,
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 0,
+            "order" : null
+          },
+          "id" : "3239d328-3eea-48cf-9df8-e0d6b4c74af3",
+          "defaultvalue" : "",
+          "displayorder" : 6
+        } ],
+        "title" : "23469c47-87af-46ab-83aa-ab4d739ef3f7",
+        "logicConfiguration" : [ ],
+        "parameters" : { },
+        "tableid" : 7,
+        "datasourceid" : 2,
+        "pagetype" : "Detail",
+        "pagetype" : "Detail"
+      }, {
+        "id" : "567867da-8d39-4113-94e1-e2e08522c04b",
+        "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+        "type" : "DETAIL",
+        "components" : [ {
+          "type" : "TEXT_INPUT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : "f50991c8-76c8-4171-b572-553d41f048fc",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "field_width" : "large",
+            "visible" : 1,
+            "mapToDataColumn" : false,
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 0,
+            "order" : null
+          },
+          "id" : "f0a066be-d721-4a68-8914-9a37766f39b4",
+          "defaultvalue" : null,
+          "displayorder" : 6
+        }, {
+          "type" : "TEXT_INPUT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : true,
+          "textType" : null,
+          "label" : "e9470d62-1edb-4f77-9860-8eede726f198",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "field_width" : "large",
+            "visible" : 1,
+            "mapToDataColumn" : false,
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 0,
+            "order" : null
+          },
+          "id" : "002568ca-ac9e-460d-9e78-0f392ba468f7",
+          "defaultvalue" : null,
+          "displayorder" : 5
+        }, {
+          "type" : "BUTTON",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : "f16a19a5-c01d-4be1-a5c4-1a6ea87d52df",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "operationStack" : {
+              "operations" : [ {
+                "type" : "SERVICE_ACTION",
+                "label" : "Run Service Action",
+                "id" : "op_xvmv1k",
+                "children" : [ ],
+                "serviceAction" : {
+                  "type" : "GWSC",
+                  "id" : "8ad31e2b-2609-4505-806b-72b59d32160f",
+                  "name" : "Create a Card",
+                  "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+                  "parameters" : [ {
+                    "id" : "49936c28-9465-4e37-86fe-499e45e10364",
+                    "parameterId" : "description",
+                    "valueType" : "COMPONENT",
+                    "componentId" : "f0a066be-d721-4a68-8914-9a37766f39b4"
+                  }, {
+                    "id" : "f8ae08be-61da-4576-84c6-553c47667ed4",
+                    "parameterId" : "name",
+                    "valueType" : "COMPONENT",
+                    "componentId" : "002568ca-ac9e-460d-9e78-0f392ba468f7"
+                  }, {
+                    "id" : "c2f8f8db-3882-4edd-aa95-99ec3eced639",
+                    "parameterId" : "list_id",
+                    "valueType" : "COMPONENT"
+                  }, {
+                    "id" : "bb2a441d-af28-499b-84c3-82d39966c535",
+                    "parameterId" : "board_id",
+                    "valueType" : "COMPONENT"
+                  } ],
+                  "flatDataServiceActionId" : 2,
+                  "serviceActionId" : "135ec789-1e90-45ca-93b8-fd50a037db97",
+                  "serviceId" : 2
+                },
+                "serviceId" : 2
+              } ]
+            },
+            "tone" : "PRIMARY",
+            "size" : "STANDARD",
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 0,
+            "showInBladeFooter" : true,
+            "order" : null
+          },
+          "id" : "89d1cb4a-1153-4e90-9c74-1c8eb70e8103",
+          "defaultvalue" : null,
+          "displayorder" : 7
+        }, {
+          "type" : "TEXT_INPUT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : true,
+          "textType" : null,
+          "label" : "35f98862-3823-470c-8b41-1a6c9bf4e136",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "field_width" : "large",
+            "visible" : 0,
+            "mapToDataColumn" : false,
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 1,
+            "order" : null
+          },
+          "id" : "63fb802f-9b85-4cb7-9d4a-0fca6731c6a3",
+          "defaultvalue" : "",
+          "displayorder" : 2
+        }, {
+          "type" : "TEXT_INPUT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : true,
+          "textType" : null,
+          "label" : "56153c97-7299-4a54-bd66-4d17092cae02",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "field_width" : "large",
+            "visible" : 0,
+            "mapToDataColumn" : false,
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 1,
+            "order" : null
+          },
+          "id" : "93e53a62-0f76-47f7-b7a7-042e00f60d1e",
+          "defaultvalue" : "",
+          "displayorder" : 1
+        } ],
+        "title" : "63a2222b-d633-4aac-b2af-fc52b068d64e",
+        "logicConfiguration" : [ ],
+        "parameters" : { },
+        "tableid" : 7,
+        "datasourceid" : 2,
+        "pagetype" : "Detail",
+        "pagetype" : "Detail"
+      }, {
+        "id" : "035952c0-8586-4899-8b3f-ad5cad6c505a",
+        "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+        "type" : "DETAIL",
+        "components" : [ {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 5,
+          "required" : false,
+          "textType" : null,
+          "label" : "bee2f720-4bdd-41f4-97f6-f24df2aa39ba",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "hideIfEmpty" : false,
+            "visible" : 1,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "ddfba478-dfb8-4923-a55c-49f8bce7d540",
+          "defaultvalue" : null,
+          "displayorder" : 1
+        }, {
+          "type" : "TABLE",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : "32b15a4f-a082-41db-8d96-ddf1d6acae4b",
+          "format" : "",
+          "foreignKeyId" : 1,
+          "parentComponentId" : null,
+          "componentTableId" : 3,
+          "defaultLimit" : 20,
+          "parameters" : {
+            "tableconfig" : {
+              "noDataText" : "33534d5a-bc84-45b0-9f4d-5805209e4a22",
+              "tableid" : 3,
+              "show_1_to_n" : "1",
+              "columns" : [ {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "id" : "z1tjjx",
+                "tableid" : 3,
+                "columnid" : 10,
+                "urlTemplate" : null,
+                "format" : "none",
+                "tableColumn" : {
+                  "columnType" : "STRING"
+                },
+                "conditional_format" : "null"
+              } ],
+              "images" : [ ],
+              "groupByColumns" : [ ],
+              "hideIfEmpty" : true,
+              "sortable" : 1,
+              "alignment" : "left"
+            },
+            "query" : null,
+            "prefill" : null,
+            "order" : null
+          },
+          "id" : "601b134e-12c3-4c8a-85b8-04a98b91c272",
+          "defaultvalue" : null,
+          "displayorder" : 2,
+          "defaultLimit" : 20
+        } ],
+        "title" : "510c735e-26b9-4179-9b5a-563d3a16fac5",
+        "logicConfiguration" : [ ],
+        "parameters" : { },
+        "tableid" : 2,
+        "datasourceid" : 2,
+        "pagetype" : "Detail",
+        "pagetype" : "Detail"
+      }, {
+        "id" : "82d85bce-d14f-43f1-a1f4-bc34716ff15f",
+        "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+        "type" : "DETAIL",
+        "components" : [ {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 10,
+          "required" : false,
+          "textType" : null,
+          "label" : "b7b95270-df4d-4787-829d-8863d68eddb8",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : "df67a5be-a9bd-4623-8de3-cc5aee5ce827",
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "hideIfEmpty" : false,
+            "visible" : 1,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "db2f8029-2d8e-47b0-b096-545dc890f63b",
+          "defaultvalue" : null,
+          "displayorder" : 2
+        }, {
+          "type" : "TABLE",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : "65e84ae5-8c1a-4319-827c-52aa1af63237",
+          "format" : "",
+          "foreignKeyId" : 6,
+          "parentComponentId" : null,
+          "componentTableId" : 7,
+          "defaultLimit" : 20,
+          "parameters" : {
+            "tableconfig" : {
+              "noDataText" : "5e5aa154-c310-4478-bb91-85c661aa33f8",
+              "tableid" : 7,
+              "show_1_to_n" : "1",
+              "columns" : [ {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "label" : "17ac30d6-f354-43cb-8751-a80d2ee1c993",
+                "id" : "1f1dlk",
+                "tableid" : 7,
+                "columnid" : 56,
+                "urlTemplate" : null,
+                "format" : "none",
+                "tableColumn" : {
+                  "columnType" : "STRING"
+                },
+                "conditional_format" : "null"
+              }, {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "label" : "f691cdae-428c-4e68-a10f-c6123ab65d17",
+                "id" : "4nuq0y",
+                "tableid" : 7,
+                "columnid" : 45,
+                "urlTemplate" : null,
+                "format" : "datetime",
+                "tableColumn" : {
+                  "columnType" : "TIMESTAMP"
+                },
+                "conditional_format" : "null"
+              }, {
+                "type" : "SIMPLE",
+                "aggregation" : "NONE",
+                "label" : "76228dde-f676-4087-bf13-76e4ed2ecd71",
+                "id" : "vjhyeu",
+                "tableid" : 7,
+                "columnid" : 43,
+                "urlTemplate" : null,
+                "format" : "yes-no",
+                "tableColumn" : {
+                  "columnType" : "BOOLEAN"
+                },
+                "conditional_format" : "null"
+              } ],
+              "images" : [ ],
+              "groupByColumns" : [ ],
+              "linkpageid" : "e427859b-0895-42a4-911b-a330190e2f0c",
+              "hideIfEmpty" : true,
+              "sortable" : 1,
+              "alignment" : "left"
+            },
+            "query" : null,
+            "prefill" : null,
+            "order" : null
+          },
+          "id" : "d76c35df-229e-457f-9a83-814fdf1e50ab",
+          "defaultvalue" : null,
+          "displayorder" : 2,
+          "defaultLimit" : 20
+        }, {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 5,
+          "required" : false,
+          "textType" : null,
+          "label" : "5842019a-b020-49a3-8541-a39a2615ee33",
+          "format" : "none",
+          "foreignKeyId" : 1,
+          "parentComponentId" : "df67a5be-a9bd-4623-8de3-cc5aee5ce827",
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "hideIfEmpty" : false,
+            "visible" : 1,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "3a59a5a3-a9fc-4e7d-8f52-cd3ea3771408",
+          "defaultvalue" : null,
+          "displayorder" : 1
+        }, {
+          "type" : "FLEXIBLE_GRID",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : null,
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "cellCount" : 2,
+            "visible" : 1,
+            "query" : null,
+            "prefill" : null,
+            "columnCount" : 2,
+            "columnWidths" : [ 1, 1 ],
+            "order" : null
+          },
+          "id" : "c7f51da2-5678-4214-8328-c4da7012adb9",
+          "defaultvalue" : null,
+          "displayorder" : 1
+        }, {
+          "type" : "GRID_ITEM",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : 0,
+          "label" : null,
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : "c7f51da2-5678-4214-8328-c4da7012adb9",
+          "parameters" : {
+            "query" : null,
+            "prefill" : null,
+            "order" : null
+          },
+          "id" : "df67a5be-a9bd-4623-8de3-cc5aee5ce827",
+          "defaultvalue" : "",
+          "displayorder" : 1
+        }, {
+          "type" : "GRID_ITEM",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : null,
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : "c7f51da2-5678-4214-8328-c4da7012adb9",
+          "parameters" : {
+            "hAlign" : "RIGHT",
+            "query" : null,
+            "prefill" : null,
+            "vAlign" : "TOP",
+            "order" : null
+          },
+          "id" : "57eac789-41fd-4bdc-989c-cf6565a35034",
+          "defaultvalue" : null,
+          "displayorder" : 2
+        }, {
+          "type" : "BUTTON",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : null,
+          "required" : false,
+          "textType" : null,
+          "label" : "8dda1483-31c6-46ef-b040-0035398d410b",
+          "format" : "",
+          "foreignKeyId" : null,
+          "parentComponentId" : "57eac789-41fd-4bdc-989c-cf6565a35034",
+          "parameters" : {
+            "operationStack" : {
+              "operations" : [ {
+                "type" : "GOTO_PAGE",
+                "label" : "Go to Page",
+                "id" : "op_yu4obb",
+                "prefill" : {
+                  "id" : "dc588e54-fce4-4d67-a1e8-b7d01a5e3bf4",
+                  "constraints" : {
+                    "type" : "EXPRESSION",
+                    "left" : {
+                      "type" : "TERM",
+                      "constraint" : {
+                        "tableId" : 0,
+                        "columnId" : 0,
+                        "valueType" : "COMPONENT",
+                        "variableComponent" : "cbd355df-5bd2-45ae-a865-5a06ee80887b",
+                        "targetComponent" : "63fb802f-9b85-4cb7-9d4a-0fca6731c6a3",
+                        "ignoredWhenValueIsNull" : false
+                      }
+                    },
+                    "operator" : "AND",
+                    "right" : {
+                      "type" : "TERM",
+                      "constraint" : {
+                        "tableId" : 0,
+                        "columnId" : 0,
+                        "valueType" : "COMPONENT",
+                        "variableComponent" : "ddaa3ca6-3674-4afc-9458-5371da453d75",
+                        "targetComponent" : "93e53a62-0f76-47f7-b7a7-042e00f60d1e",
+                        "ignoredWhenValueIsNull" : false
+                      }
+                    }
+                  },
+                  "autojoins" : false
+                },
+                "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+                "pageId" : "567867da-8d39-4113-94e1-e2e08522c04b"
+              } ]
+            },
+            "tone" : "SECONDARY",
+            "size" : "STANDARD",
+            "query" : null,
+            "prefill" : null,
+            "disabled" : 0,
+            "showInBladeFooter" : false,
+            "order" : null
+          },
+          "id" : "abcc42e9-d057-4060-b5e3-fc4fc56f5521",
+          "defaultvalue" : null,
+          "displayorder" : 1
+        }, {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 8,
+          "required" : false,
+          "textType" : null,
+          "label" : "52a1b77d-ea51-4076-be65-96f297bf081b",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "hideIfEmpty" : false,
+            "visible" : 0,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "cbd355df-5bd2-45ae-a865-5a06ee80887b",
+          "defaultvalue" : null,
+          "displayorder" : 3
+        }, {
+          "type" : "TEXT",
+          "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+          "columnId" : 12,
+          "required" : false,
+          "textType" : null,
+          "label" : "1dc8fc26-894e-4cf8-b44c-1f586055b239",
+          "format" : "none",
+          "foreignKeyId" : null,
+          "parentComponentId" : null,
+          "parameters" : {
+            "type" : "SIMPLE",
+            "operationStack" : {
+              "operations" : [ ]
+            },
+            "hideIfEmpty" : false,
+            "visible" : 0,
+            "query" : null,
+            "prefill" : null,
+            "conditional_format" : "{\"backcolor\":null,\"condition\":null,\"fillWholeRow\":null,\"option\":null,\"optionValue\":null,\"textcolor\":null}",
+            "order" : null
+          },
+          "id" : "ddaa3ca6-3674-4afc-9458-5371da453d75",
+          "defaultvalue" : null,
+          "displayorder" : 4
+        } ],
+        "title" : "1d492241-6c4b-407f-8f3a-92b5248848d9",
+        "logicConfiguration" : [ ],
+        "parameters" : { },
+        "tableid" : 3,
+        "datasourceid" : 2,
+        "pagetype" : "Detail",
+        "pagetype" : "Detail"
+      } ],
+      "actionApp" : true,
+      "startPageId" : "f42ea4c4-4bf1-4c96-bd91-804b17489ab6",
+      "parameters" : {
+        "imageUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Trello.57c7a25e2f8e991308c4b5972da77a14.svg",
+        "description" : "1fab9e74-ff23-4470-abd5-d393a230630b"
+      },
+      "title" : "7d0db1f3-25a0-4853-8388-48e1996b1038",
+      "trackingUuid" : "8e975ef2-1070-44ca-a0eb-cd5b1db23eea"
+    },
+    "outboundLinks" : {
+      "page" : [ ],
+      "notification" : [ ]
+    }
+  } ],
+  "services" : [ {
+    "id" : 2,
+    "uuid" : "ef2696d4-dcb0-4765-8b82-8946a924ee28",
+    "version" : 30,
+    "title" : "A Sample Trello Integration",
+    "serviceType" : "GWSC",
+    "group" : "GWSC:JSON",
+    "schemaName" : "microapps_a_sample_trello",
+    "configuration" : {
+      "trackingUuid" : "caabec91-8bb9-4283-98bb-d74f9729811c",
+      "baseUrl" : "https://api.trello.com/1/",
+      "security" : {
+        "type" : "APIKEY",
+        "apiKeys" : [ {
+          "key" : "key",
+          "value" : "{{secret \"dataEndpoint.apiKey1\"}}",
+          "authenticationMethod" : "QUERY_PARAMETER"
+        }, {
+          "key" : "token",
+          "value" : "{{secret \"dataEndpoint.apiKey2\"}}",
+          "authenticationMethod" : "QUERY_PARAMETER"
+        } ]
+      },
+      "useServiceActionSecurity" : false,
+      "serviceActionSecurity" : {
+        "type" : "NONE"
+      },
+      "useOnPremProxy" : false,
+      "dataEndpoints" : [ {
+        "id" : 1,
+        "name" : "boards",
+        "endpoint" : "members/me/boards",
+        "requestMethod" : "GET",
+        "postMode" : "FORMDATA",
+        "body" : "",
+        "type" : "LIST",
+        "rootPath" : "",
+        "tables" : [ {
+          "id" : 1,
+          "tableName" : "trello_boards",
+          "path" : "",
+          "columns" : [ {
+            "name" : "name",
+            "path" : "name",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 1000,
+            "source" : "RECORD"
+          }, {
+            "name" : "id",
+            "path" : "id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD",
+            "columnRole" : "PRIMARY_KEY"
+          }, {
+            "name" : "url",
+            "path" : "url",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 1000,
+            "source" : "RECORD"
+          } ],
+          "root" : true,
+          "ignored" : false,
+          "childTables" : [ ],
+          "detailEndpointIds" : [ 2, 3 ],
+          "loadingType" : "PULL"
+        } ],
+        "incrementalSyncQueryParameters" : [ ],
+        "baseTableName" : "trello_boards",
+        "paginationEnabled" : true,
+        "mergeStrategy" : "NONE",
+        "bodyParameters" : [ ],
+        "synchronizationTypes" : [ {
+          "id" : "FullSynchronization",
+          "name" : "Full Synchronization",
+          "description" : "Full synchronization drops the local cache and pulls all data from the source system again.",
+          "preferredSchedule" : "DAILY"
+        } ],
+        "headerParameters" : [ ],
+        "queryParameters" : [ {
+          "name" : "fields",
+          "defaultValue" : "name,url",
+          "parameterType" : "STRING",
+          "required" : false,
+          "uniqueId" : "b366b132-82b7-4db3-aa8f-073820fc32c9"
+        } ],
+        "pathParameters" : [ ]
+      }, {
+        "id" : 2,
+        "name" : "Board Lists",
+        "endpoint" : "boards/{{board_id}}/lists",
+        "requestMethod" : "GET",
+        "postMode" : "FORMDATA",
+        "body" : "",
+        "type" : "DETAIL",
+        "parentTable" : "trello_boards",
+        "rootPath" : "",
+        "tables" : [ {
+          "id" : 2,
+          "tableName" : "trello_board_lists",
+          "path" : "",
+          "columns" : [ {
+            "name" : "subscribed",
+            "path" : "subscribed",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "id_board",
+            "path" : "idBoard",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "pos",
+            "path" : "pos",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "name",
+            "path" : "name",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "closed",
+            "path" : "closed",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "id",
+            "path" : "id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD",
+            "columnRole" : "PRIMARY_KEY"
+          }, {
+            "name" : "soft_limit",
+            "path" : "softLimit",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          } ],
+          "root" : true,
+          "ignored" : false,
+          "childTables" : [ ],
+          "loadingType" : "PULL"
+        } ],
+        "incrementalSyncQueryParameters" : [ ],
+        "baseTableName" : "Trello Board Lists",
+        "paginationEnabled" : true,
+        "mergeStrategy" : "NONE",
+        "bodyParameters" : [ ],
+        "synchronizationTypes" : [ {
+          "id" : "FullSynchronization",
+          "name" : "Full Synchronization",
+          "description" : "Full synchronization drops the local cache and pulls all data from the source system again.",
+          "preferredSchedule" : "DAILY"
+        } ],
+        "headerParameters" : [ ],
+        "queryParameters" : [ ],
+        "pathParameters" : [ {
+          "valueType" : "PARENT_DATA",
+          "name" : "board_id",
+          "defaultValue" : "5ea6ddca092d460159f7f045",
+          "parameterType" : "STRING",
+          "required" : true,
+          "uniqueId" : "f8a9c33e-45d0-40c6-8d5f-b5132d3d77ad",
+          "columnName" : "id"
+        } ]
+      }, {
+        "id" : 4,
+        "name" : "Card Comments",
+        "endpoint" : "cards/{{card_id}}/actions",
+        "requestMethod" : "GET",
+        "postMode" : "FORMDATA",
+        "body" : "",
+        "type" : "DETAIL",
+        "parentTable" : "trello_cards",
+        "rootPath" : "",
+        "tables" : [ {
+          "id" : 7,
+          "tableName" : "trello_card_comments",
+          "path" : "",
+          "columns" : [ {
+            "name" : "date",
+            "path" : "date",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "TIMESTAMP",
+            "source" : "RECORD"
+          }, {
+            "name" : "text",
+            "path" : "data/text",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "member_creator_non_public",
+            "path" : "memberCreator/nonPublicAvailable",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "card_id",
+            "path" : "data/card/id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "member_creator_avatar_has",
+            "path" : "memberCreator/avatarHash",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "limits_reactions_per_acti",
+            "path" : "limits/reactions/perAction/status",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "type",
+            "path" : "type",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "member_creator_id_member",
+            "path" : "memberCreator/idMemberReferrer",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "creator_full_name",
+            "path" : "memberCreator/fullName",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "card_short_link",
+            "path" : "data/card/shortLink",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "board_short_link",
+            "path" : "data/board/shortLink",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "member_creator_activity_b",
+            "path" : "memberCreator/activityBlocked",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "id",
+            "path" : "id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD",
+            "columnRole" : "PRIMARY_KEY"
+          }, {
+            "name" : "creator_id",
+            "path" : "memberCreator/id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "limits_reactions_per_1",
+            "path" : "limits/reactions/perAction/warnAt",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "board_name",
+            "path" : "data/board/name",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "limits_reactions_unique_p",
+            "path" : "limits/reactions/uniquePerAction/disableAt",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "member_creator_avatar_url",
+            "path" : "memberCreator/avatarUrl",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "board_id",
+            "path" : "data/board/id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "card_name",
+            "path" : "data/card/name",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "creator_username",
+            "path" : "memberCreator/username",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "member_creator_initials",
+            "path" : "memberCreator/initials",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "limits_reactions_per_2",
+            "path" : "limits/reactions/perAction/disableAt",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "limits_reactions_uniq_1",
+            "path" : "limits/reactions/uniquePerAction/status",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "list_id",
+            "path" : "data/list/id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "card_id_short",
+            "path" : "data/card/idShort",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "id_member_creator",
+            "path" : "idMemberCreator",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "limits_reactions_uniq_2",
+            "path" : "limits/reactions/uniquePerAction/warnAt",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          } ],
+          "root" : true,
+          "ignored" : false,
+          "childTables" : [ ],
+          "loadingType" : "PULL"
+        } ],
+        "incrementalSyncQueryParameters" : [ ],
+        "baseTableName" : "Trello Card Comments",
+        "paginationEnabled" : true,
+        "mergeStrategy" : "NONE",
+        "bodyParameters" : [ ],
+        "synchronizationTypes" : [ {
+          "id" : "FullSynchronization",
+          "name" : "Full Synchronization",
+          "description" : "Full synchronization drops the local cache and pulls all data from the source system again.",
+          "preferredSchedule" : "DAILY"
+        } ],
+        "headerParameters" : [ ],
+        "queryParameters" : [ {
+          "valueType" : "VALUE",
+          "name" : "filter",
+          "defaultValue" : "commentCard",
+          "parameterType" : "STRING",
+          "required" : false,
+          "uniqueId" : "3c3a490c-7e6a-42cb-978a-98c1458e5620"
+        } ],
+        "pathParameters" : [ {
+          "valueType" : "PARENT_DATA",
+          "name" : "card_id",
+          "defaultValue" : "5e343e6bf1ed852443c3072a",
+          "parameterType" : "STRING",
+          "required" : true,
+          "uniqueId" : "742b5863-aad8-4dcd-9637-ced80b24ff1e",
+          "columnName" : "id"
+        } ]
+      }, {
+        "id" : 3,
+        "name" : "Board Cards",
+        "endpoint" : "boards/{{board_id}}/cards",
+        "requestMethod" : "GET",
+        "postMode" : "FORMDATA",
+        "body" : "",
+        "type" : "DETAIL",
+        "parentTable" : "trello_boards",
+        "rootPath" : "",
+        "tables" : [ {
+          "id" : 3,
+          "tableName" : "trello_cards",
+          "path" : "",
+          "columns" : [ {
+            "name" : "badges_attachments",
+            "path" : "badges/attachments",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_attachments_by_1",
+            "path" : "badges/attachmentsByType/trello/card",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_attachments_by_typ",
+            "path" : "badges/attachmentsByType/trello/board",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_check_items",
+            "path" : "badges/checkItems",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_check_items_checke",
+            "path" : "badges/checkItemsChecked",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_check_items_earlie",
+            "path" : "badges/checkItemsEarliestDue",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_comments",
+            "path" : "badges/comments",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_description",
+            "path" : "badges/description",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_due",
+            "path" : "badges/due",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_due_complete",
+            "path" : "badges/dueComplete",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_fogbugz",
+            "path" : "badges/fogbugz",
+            "primaryKeyCandidate" : false,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_location",
+            "path" : "badges/location",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_subscribed",
+            "path" : "badges/subscribed",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_viewing_member_vot",
+            "path" : "badges/viewingMemberVoted",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "badges_votes",
+            "path" : "badges/votes",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "check_item_states",
+            "path" : "checkItemStates",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "closed",
+            "path" : "closed",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "cover_brightness",
+            "path" : "cover/brightness",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "cover_color",
+            "path" : "cover/color",
+            "primaryKeyCandidate" : false,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "cover_id_attachment",
+            "path" : "cover/idAttachment",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "cover_id_uploaded_backgro",
+            "path" : "cover/idUploadedBackground",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "cover_size",
+            "path" : "cover/size",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "date_last_activity",
+            "path" : "dateLastActivity",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "TIMESTAMP",
+            "source" : "RECORD"
+          }, {
+            "name" : "desc",
+            "path" : "desc",
+            "primaryKeyCandidate" : false,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "desc_data",
+            "path" : "descData",
+            "primaryKeyCandidate" : false,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "due",
+            "path" : "due",
+            "primaryKeyCandidate" : false,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "due_complete",
+            "path" : "dueComplete",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "due_reminder",
+            "path" : "dueReminder",
+            "primaryKeyCandidate" : false,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "id",
+            "path" : "id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD",
+            "columnRole" : "PRIMARY_KEY"
+          }, {
+            "name" : "id_attachment_cover",
+            "path" : "idAttachmentCover",
+            "primaryKeyCandidate" : false,
+            "ignored" : true,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "id_board",
+            "path" : "idBoard",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "id_list",
+            "path" : "idList",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "id_short",
+            "path" : "idShort",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "is_template",
+            "path" : "isTemplate",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "manual_cover_attachment",
+            "path" : "manualCoverAttachment",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "name",
+            "path" : "name",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "pos",
+            "path" : "pos",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "INTEGER",
+            "source" : "RECORD"
+          }, {
+            "name" : "short_link",
+            "path" : "shortLink",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "short_url",
+            "path" : "shortUrl",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "subscribed",
+            "path" : "subscribed",
+            "primaryKeyCandidate" : true,
+            "ignored" : true,
+            "columnType" : "BOOLEAN",
+            "source" : "RECORD"
+          }, {
+            "name" : "url",
+            "path" : "url",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          } ],
+          "root" : true,
+          "ignored" : false,
+          "childTables" : [ "idLabels", "idMembers", "labels" ],
+          "detailEndpointIds" : [ 4 ],
+          "loadingType" : "PULL"
+        }, {
+          "id" : 4,
+          "tableName" : "trello_cards_id_labels",
+          "path" : "idLabels",
+          "columns" : [ {
+            "name" : "value",
+            "path" : "",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          } ],
+          "root" : false,
+          "ignored" : true,
+          "childTables" : [ ],
+          "detailEndpointIds" : [ ],
+          "loadingType" : "PULL"
+        }, {
+          "id" : 5,
+          "tableName" : "trello_cards_members",
+          "path" : "idMembers",
+          "columns" : [ {
+            "name" : "parent_id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "PARENT_RECORD",
+            "parentColumnReference" : "id",
+            "parentTableReference" : "trello_board_cards",
+            "referenceGroup" : "b5fe9636-481c-4ca6-9e87-8c2491286d4d"
+          }, {
+            "name" : "root_id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "ROOT_RECORD",
+            "columnRole" : "ROOT_KEY_REFERENCE",
+            "parentColumnReference" : "id"
+          }, {
+            "name" : "unique_id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 36,
+            "source" : "GENERATED",
+            "columnRole" : "PRIMARY_KEY"
+          }, {
+            "name" : "value",
+            "path" : "",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          } ],
+          "root" : false,
+          "ignored" : false,
+          "childTables" : [ ],
+          "detailEndpointIds" : [ ],
+          "loadingType" : "PULL"
+        }, {
+          "id" : 6,
+          "tableName" : "trello_cards_labels",
+          "path" : "labels",
+          "columns" : [ {
+            "name" : "color",
+            "path" : "color",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "id",
+            "path" : "id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "id_board",
+            "path" : "idBoard",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "name",
+            "path" : "name",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "RECORD"
+          }, {
+            "name" : "parent_id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "PARENT_RECORD",
+            "parentColumnReference" : "id",
+            "parentTableReference" : "trello_board_cards",
+            "referenceGroup" : "5757d9d2-041a-4581-9d2d-4338dace9374"
+          }, {
+            "name" : "root_id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 255,
+            "source" : "ROOT_RECORD",
+            "columnRole" : "ROOT_KEY_REFERENCE",
+            "parentColumnReference" : "id"
+          }, {
+            "name" : "unique_id",
+            "primaryKeyCandidate" : true,
+            "ignored" : false,
+            "columnType" : "STRING",
+            "length" : 36,
+            "source" : "GENERATED",
+            "columnRole" : "PRIMARY_KEY"
+          } ],
+          "root" : false,
+          "ignored" : false,
+          "childTables" : [ ],
+          "detailEndpointIds" : [ ],
+          "loadingType" : "PULL"
+        } ],
+        "incrementalSyncQueryParameters" : [ ],
+        "baseTableName" : "Trello Board Cards",
+        "paginationEnabled" : true,
+        "mergeStrategy" : "NONE",
+        "bodyParameters" : [ ],
+        "synchronizationTypes" : [ {
+          "id" : "FullSynchronization",
+          "name" : "Full Synchronization",
+          "description" : "Full synchronization drops the local cache and pulls all data from the source system again.",
+          "preferredSchedule" : "DAILY"
+        } ],
+        "headerParameters" : [ ],
+        "queryParameters" : [ ],
+        "pathParameters" : [ {
+          "valueType" : "PARENT_DATA",
+          "name" : "board_id",
+          "defaultValue" : "5ea6ddca092d460159f7f045",
+          "parameterType" : "STRING",
+          "required" : true,
+          "uniqueId" : "49bbcdc8-207a-4934-b3a9-1f0a3426471e",
+          "columnName" : "id"
+        } ]
+      } ],
+      "webhookListeners" : [ ],
+      "schedule" : [ {
+        "synchronizationTypeId" : "FullSynchronization",
+        "useTimeRange" : false,
+        "schedule" : "MANUALLY"
+      }, {
+        "synchronizationTypeId" : "IncrementalSynchronization",
+        "useTimeRange" : false,
+        "schedule" : "MANUALLY"
+      } ],
+      "serviceActions" : [ {
+        "id" : 2,
+        "name" : "Create a Card",
+        "endpoint" : "cards",
+        "requestMethod" : "POST",
+        "postMode" : "FORMDATA",
+        "body" : "",
+        "serviceActionId" : "135ec789-1e90-45ca-93b8-fd50a037db97",
+        "actionParameters" : [ {
+          "name" : "name",
+          "dataType" : "STRING",
+          "defaultValue" : "",
+          "required" : true,
+          "uniqueId" : "2b166c0c-cc6f-47fd-8ae8-598a3eb7199f"
+        }, {
+          "name" : "description",
+          "dataType" : "STRING",
+          "defaultValue" : "",
+          "required" : false,
+          "uniqueId" : "e8ece3ec-5e24-41f8-9836-7def47c17976"
+        }, {
+          "name" : "position",
+          "dataType" : "STRING",
+          "defaultValue" : "bottom",
+          "required" : false,
+          "uniqueId" : "52bfc052-71f5-4948-a070-6c519c27791c"
+        }, {
+          "name" : "due_date",
+          "dataType" : "DATETIME",
+          "defaultValue" : "",
+          "dateTimeFormat" : "ISO_LOCAL_DATE_TIME",
+          "timezone" : "Etc/UTC",
+          "required" : false,
+          "uniqueId" : "7185640b-fbaf-44d8-b48c-f3797079f702"
+        }, {
+          "name" : "list_id",
+          "dataType" : "STRING",
+          "defaultValue" : "",
+          "required" : true,
+          "uniqueId" : "4f9beaee-fc86-4641-908e-6e790ec440bd"
+        }, {
+          "name" : "members",
+          "dataType" : "STRING",
+          "defaultValue" : "",
+          "required" : false,
+          "uniqueId" : "0a24b869-dbcd-4835-95a3-993eabc1fff5"
+        }, {
+          "name" : "board_id",
+          "dataType" : "STRING",
+          "defaultValue" : "",
+          "required" : true,
+          "uniqueId" : "5c24f099-a4ca-437f-b7f8-6fbca4b2e647"
+        } ],
+        "preActionDataUpdates" : [ ],
+        "postActionDataUpdates" : [ ],
+        "bodyParameters" : [ ],
+        "headerParameters" : [ ],
+        "queryParameters" : [ {
+          "name" : "name",
+          "required" : false,
+          "uniqueId" : "d11feece-4920-4c5e-99a3-15ccb534acfd",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "2b166c0c-cc6f-47fd-8ae8-598a3eb7199f"
+        }, {
+          "name" : "desc",
+          "required" : false,
+          "uniqueId" : "6521552f-1216-44c4-8e4f-85b352fef109",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "e8ece3ec-5e24-41f8-9836-7def47c17976"
+        }, {
+          "name" : "pos",
+          "required" : false,
+          "uniqueId" : "a908b0e2-4026-4d2e-84c0-720c736fd867",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "52bfc052-71f5-4948-a070-6c519c27791c"
+        }, {
+          "name" : "due",
+          "required" : false,
+          "uniqueId" : "3d5dfdf7-5dc7-45c9-bc91-103ae930cf11",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "7185640b-fbaf-44d8-b48c-f3797079f702"
+        }, {
+          "name" : "idList",
+          "required" : false,
+          "uniqueId" : "834325e4-adb2-4e0a-90e4-7f6e4429e472",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "4f9beaee-fc86-4641-908e-6e790ec440bd"
+        }, {
+          "name" : "idMembers",
+          "required" : false,
+          "uniqueId" : "2c12bab7-46b8-4162-8102-87d70ad019aa",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "0a24b869-dbcd-4835-95a3-993eabc1fff5"
+        } ],
+        "pathParameters" : [ ]
+      }, {
+        "id" : 1,
+        "name" : "Add Comment to a Card",
+        "endpoint" : "/cards/{{card_id}}/actions/comments",
+        "requestMethod" : "POST",
+        "postMode" : "FORMDATA",
+        "body" : "",
+        "serviceActionId" : "72a911f4-a046-4962-8da1-403852f2e721",
+        "actionParameters" : [ {
+          "name" : "card_id",
+          "dataType" : "STRING",
+          "defaultValue" : "",
+          "required" : true,
+          "uniqueId" : "2b166c0c-cc6f-47fd-8ae8-598a3eb7199f"
+        }, {
+          "name" : "comment_text",
+          "dataType" : "STRING",
+          "defaultValue" : "",
+          "required" : true,
+          "uniqueId" : "205e9e69-44d7-42d1-b22f-c1c390f9dd39"
+        } ],
+        "preActionDataUpdates" : [ ],
+        "postActionDataUpdates" : [ ],
+        "bodyParameters" : [ ],
+        "headerParameters" : [ ],
+        "queryParameters" : [ {
+          "name" : "text",
+          "required" : false,
+          "uniqueId" : "5c934d17-4dae-4e75-aeb5-02a6365f328f",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "205e9e69-44d7-42d1-b22f-c1c390f9dd39"
+        } ],
+        "pathParameters" : [ {
+          "name" : "card_id",
+          "required" : false,
+          "uniqueId" : "953e7536-c987-4d29-9451-4fb0edc43f2a",
+          "editMode" : "FULL",
+          "valueMapping" : "ACTION_PARAMETER",
+          "actionParameterUniqueId" : "2b166c0c-cc6f-47fd-8ae8-598a3eb7199f"
+        } ]
+      } ],
+      "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Trello.57c7a25e2f8e991308c4b5972da77a14.svg"
+    },
+    "context" : { },
+    "tables" : [ {
+      "id" : 2,
+      "title" : "trello_boards",
+      "displayName" : "Trello Boards",
+      "entityName" : "trello_boards",
+      "type" : "TABLE",
+      "loadingType" : "PULL",
+      "columns" : [ {
+        "id" : 5,
+        "title" : "name",
+        "displayName" : "Name",
+        "attributeName" : "name",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Name",
+        "primaryKey" : false
+      }, {
+        "id" : 6,
+        "title" : "id",
+        "displayName" : "Id",
+        "attributeName" : "id",
+        "type" : "STRING",
+        "nullable" : false,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id",
+        "primaryKey" : true
+      }, {
+        "id" : 7,
+        "title" : "url",
+        "displayName" : "Url",
+        "attributeName" : "url",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Url",
+        "primaryKey" : false
+      } ]
+    }, {
+      "id" : 3,
+      "title" : "trello_board_lists",
+      "displayName" : "Trello Board Lists",
+      "entityName" : "trello_board_lists",
+      "type" : "TABLE",
+      "loadingType" : "PULL",
+      "columns" : [ {
+        "id" : 8,
+        "title" : "id_board",
+        "displayName" : "Id Board",
+        "attributeName" : "id_board",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id Board",
+        "primaryKey" : false
+      }, {
+        "id" : 9,
+        "title" : "pos",
+        "displayName" : "Pos",
+        "attributeName" : "pos",
+        "type" : "INTEGER",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Pos",
+        "primaryKey" : false
+      }, {
+        "id" : 10,
+        "title" : "name",
+        "displayName" : "Name",
+        "attributeName" : "name",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Name",
+        "primaryKey" : false
+      }, {
+        "id" : 11,
+        "title" : "closed",
+        "displayName" : "Closed",
+        "attributeName" : "closed",
+        "type" : "BOOLEAN",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Closed",
+        "primaryKey" : false
+      }, {
+        "id" : 12,
+        "title" : "id",
+        "displayName" : "Id",
+        "attributeName" : "id",
+        "type" : "STRING",
+        "nullable" : false,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id",
+        "primaryKey" : true
+      } ]
+    }, {
+      "id" : 4,
+      "title" : "trello_card_comments",
+      "displayName" : "Trello Card Comments",
+      "entityName" : "trello_card_comments",
+      "type" : "TABLE",
+      "loadingType" : "PULL",
+      "columns" : [ {
+        "id" : 13,
+        "title" : "date",
+        "displayName" : "Date",
+        "attributeName" : "date",
+        "type" : "TIMESTAMP",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Date",
+        "primaryKey" : false
+      }, {
+        "id" : 14,
+        "title" : "text",
+        "displayName" : "Text",
+        "attributeName" : "text",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Text",
+        "primaryKey" : false
+      }, {
+        "id" : 15,
+        "title" : "card_id",
+        "displayName" : "Card Id",
+        "attributeName" : "card_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Card Id",
+        "primaryKey" : false
+      }, {
+        "id" : 16,
+        "title" : "type",
+        "displayName" : "Type",
+        "attributeName" : "type",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Type",
+        "primaryKey" : false
+      }, {
+        "id" : 17,
+        "title" : "creator_full_name",
+        "displayName" : "Creator Full Name",
+        "attributeName" : "creator_full_name",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Creator Full Name",
+        "primaryKey" : false
+      }, {
+        "id" : 18,
+        "title" : "card_short_link",
+        "displayName" : "Card Short Link",
+        "attributeName" : "card_short_link",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Card Short Link",
+        "primaryKey" : false
+      }, {
+        "id" : 19,
+        "title" : "board_short_link",
+        "displayName" : "Board Short Link",
+        "attributeName" : "board_short_link",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Board Short Link",
+        "primaryKey" : false
+      }, {
+        "id" : 20,
+        "title" : "id",
+        "displayName" : "Id",
+        "attributeName" : "id",
+        "type" : "STRING",
+        "nullable" : false,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id",
+        "primaryKey" : true
+      }, {
+        "id" : 21,
+        "title" : "creator_id",
+        "displayName" : "Creator Id",
+        "attributeName" : "creator_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Creator Id",
+        "primaryKey" : false
+      }, {
+        "id" : 22,
+        "title" : "board_name",
+        "displayName" : "Board Name",
+        "attributeName" : "board_name",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Board Name",
+        "primaryKey" : false
+      }, {
+        "id" : 23,
+        "title" : "board_id",
+        "displayName" : "Board Id",
+        "attributeName" : "board_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Board Id",
+        "primaryKey" : false
+      }, {
+        "id" : 24,
+        "title" : "card_name",
+        "displayName" : "Card Name",
+        "attributeName" : "card_name",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Card Name",
+        "primaryKey" : false
+      }, {
+        "id" : 25,
+        "title" : "creator_username",
+        "displayName" : "Creator Username",
+        "attributeName" : "creator_username",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Creator Username",
+        "primaryKey" : false
+      }, {
+        "id" : 26,
+        "title" : "list_id",
+        "displayName" : "List Id",
+        "attributeName" : "list_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "List Id",
+        "primaryKey" : false
+      }, {
+        "id" : 27,
+        "title" : "card_id_short",
+        "displayName" : "Card Id Short",
+        "attributeName" : "card_id_short",
+        "type" : "INTEGER",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Card Id Short",
+        "primaryKey" : false
+      } ]
+    }, {
+      "id" : 5,
+      "title" : "trello_cards_labels",
+      "displayName" : "Trello Cards Labels",
+      "entityName" : "trello_cards_labels",
+      "type" : "TABLE",
+      "loadingType" : "PULL",
+      "columns" : [ {
+        "id" : 28,
+        "title" : "color",
+        "displayName" : "Color",
+        "attributeName" : "color",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Color",
+        "primaryKey" : false
+      }, {
+        "id" : 29,
+        "title" : "id",
+        "displayName" : "Id",
+        "attributeName" : "id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id",
+        "primaryKey" : false
+      }, {
+        "id" : 30,
+        "title" : "id_board",
+        "displayName" : "Id Board",
+        "attributeName" : "id_board",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id Board",
+        "primaryKey" : false
+      }, {
+        "id" : 31,
+        "title" : "name",
+        "displayName" : "Name",
+        "attributeName" : "name",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Name",
+        "primaryKey" : false
+      }, {
+        "id" : 32,
+        "title" : "parent_id",
+        "displayName" : "Parent Id",
+        "attributeName" : "parent_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Parent Id",
+        "primaryKey" : false
+      }, {
+        "id" : 33,
+        "title" : "root_id",
+        "displayName" : "Root Id",
+        "attributeName" : "root_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Root Id",
+        "primaryKey" : false
+      }, {
+        "id" : 34,
+        "title" : "unique_id",
+        "displayName" : "Unique Id",
+        "attributeName" : "unique_id",
+        "type" : "STRING",
+        "nullable" : false,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Unique Id",
+        "primaryKey" : true
+      } ]
+    }, {
+      "id" : 6,
+      "title" : "trello_cards_members",
+      "displayName" : "Trello Cards Members",
+      "entityName" : "trello_cards_members",
+      "type" : "TABLE",
+      "loadingType" : "PULL",
+      "columns" : [ {
+        "id" : 35,
+        "title" : "parent_id",
+        "displayName" : "Parent Id",
+        "attributeName" : "parent_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Parent Id",
+        "primaryKey" : false
+      }, {
+        "id" : 36,
+        "title" : "root_id",
+        "displayName" : "Root Id",
+        "attributeName" : "root_id",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Root Id",
+        "primaryKey" : false
+      }, {
+        "id" : 37,
+        "title" : "unique_id",
+        "displayName" : "Unique Id",
+        "attributeName" : "unique_id",
+        "type" : "STRING",
+        "nullable" : false,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Unique Id",
+        "primaryKey" : true
+      }, {
+        "id" : 38,
+        "title" : "value",
+        "displayName" : "Value",
+        "attributeName" : "value",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Value",
+        "primaryKey" : false
+      } ]
+    }, {
+      "id" : 7,
+      "title" : "trello_cards",
+      "displayName" : "Trello Cards",
+      "entityName" : "trello_cards",
+      "type" : "TABLE",
+      "loadingType" : "PULL",
+      "columns" : [ {
+        "id" : 39,
+        "title" : "badges_comments",
+        "displayName" : "Badges Comments",
+        "attributeName" : "badges_comments",
+        "type" : "INTEGER",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Badges Comments",
+        "primaryKey" : false
+      }, {
+        "id" : 40,
+        "title" : "badges_description",
+        "displayName" : "Badges Description",
+        "attributeName" : "badges_description",
+        "type" : "BOOLEAN",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Badges Description",
+        "primaryKey" : false
+      }, {
+        "id" : 41,
+        "title" : "badges_fogbugz",
+        "displayName" : "Badges Fogbugz",
+        "attributeName" : "badges_fogbugz",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Badges Fogbugz",
+        "primaryKey" : false
+      }, {
+        "id" : 42,
+        "title" : "badges_location",
+        "displayName" : "Badges Location",
+        "attributeName" : "badges_location",
+        "type" : "BOOLEAN",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Badges Location",
+        "primaryKey" : false
+      }, {
+        "id" : 43,
+        "title" : "closed",
+        "displayName" : "Closed",
+        "attributeName" : "closed",
+        "type" : "BOOLEAN",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Closed",
+        "primaryKey" : false
+      }, {
+        "id" : 44,
+        "title" : "cover_color",
+        "displayName" : "Cover Color",
+        "attributeName" : "cover_color",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Cover Color",
+        "primaryKey" : false
+      }, {
+        "id" : 45,
+        "title" : "date_last_activity",
+        "displayName" : "Date Last Activity",
+        "attributeName" : "date_last_activity",
+        "type" : "TIMESTAMP",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Date Last Activity",
+        "primaryKey" : false
+      }, {
+        "id" : 46,
+        "title" : "desc",
+        "displayName" : "Desc",
+        "attributeName" : "desc",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Desc",
+        "primaryKey" : false
+      }, {
+        "id" : 47,
+        "title" : "desc_data",
+        "displayName" : "Desc Data",
+        "attributeName" : "desc_data",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Desc Data",
+        "primaryKey" : false
+      }, {
+        "id" : 48,
+        "title" : "due",
+        "displayName" : "Due",
+        "attributeName" : "due",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Due",
+        "primaryKey" : false
+      }, {
+        "id" : 49,
+        "title" : "due_complete",
+        "displayName" : "Due Complete",
+        "attributeName" : "due_complete",
+        "type" : "BOOLEAN",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Due Complete",
+        "primaryKey" : false
+      }, {
+        "id" : 50,
+        "title" : "due_reminder",
+        "displayName" : "Due Reminder",
+        "attributeName" : "due_reminder",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Due Reminder",
+        "primaryKey" : false
+      }, {
+        "id" : 51,
+        "title" : "id",
+        "displayName" : "Id",
+        "attributeName" : "id",
+        "type" : "STRING",
+        "nullable" : false,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id",
+        "primaryKey" : true
+      }, {
+        "id" : 52,
+        "title" : "id_board",
+        "displayName" : "Id Board",
+        "attributeName" : "id_board",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id Board",
+        "primaryKey" : false
+      }, {
+        "id" : 53,
+        "title" : "id_list",
+        "displayName" : "Id List",
+        "attributeName" : "id_list",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id List",
+        "primaryKey" : false
+      }, {
+        "id" : 54,
+        "title" : "id_short",
+        "displayName" : "Id Short",
+        "attributeName" : "id_short",
+        "type" : "INTEGER",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Id Short",
+        "primaryKey" : false
+      }, {
+        "id" : 55,
+        "title" : "manual_cover_attachment",
+        "displayName" : "Manual Cover Attachment",
+        "attributeName" : "manual_cover_attachment",
+        "type" : "BOOLEAN",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Manual Cover Attachment",
+        "primaryKey" : false
+      }, {
+        "id" : 56,
+        "title" : "name",
+        "displayName" : "Name",
+        "attributeName" : "name",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Name",
+        "primaryKey" : false
+      }, {
+        "id" : 57,
+        "title" : "pos",
+        "displayName" : "Pos",
+        "attributeName" : "pos",
+        "type" : "INTEGER",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Pos",
+        "primaryKey" : false
+      }, {
+        "id" : 58,
+        "title" : "short_link",
+        "displayName" : "Short Link",
+        "attributeName" : "short_link",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Short Link",
+        "primaryKey" : false
+      }, {
+        "id" : 59,
+        "title" : "short_url",
+        "displayName" : "Short Url",
+        "attributeName" : "short_url",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Short Url",
+        "primaryKey" : false
+      }, {
+        "id" : 60,
+        "title" : "url",
+        "displayName" : "Url",
+        "attributeName" : "url",
+        "type" : "STRING",
+        "nullable" : true,
+        "autoIncrement" : false,
+        "roleType" : "DB_COLUMN",
+        "searchable" : true,
+        "readable" : true,
+        "writable" : false,
+        "defaultLabel" : "Url",
+        "primaryKey" : false
+      } ]
+    } ],
+    "relationships" : [ {
+      "id" : 1,
+      "pkTable" : {
+        "id" : 3,
+        "title" : "trello_board_lists",
+        "type" : "TABLE"
+      },
+      "fkTable" : {
+        "id" : 2,
+        "title" : "trello_boards",
+        "type" : "TABLE"
+      },
+      "alias" : "fk_trello_boa_id",
+      "userDefined" : true,
+      "fkColumnPairs" : [ {
+        "fkId" : 1,
+        "pkColumn" : {
+          "id" : 8,
+          "title" : "id_board",
+          "displayName" : "Id Board",
+          "attributeName" : "id_board",
+          "type" : "STRING",
+          "nullable" : true,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id Board",
+          "primaryKey" : false
+        },
+        "fkColumn" : {
+          "id" : 6,
+          "title" : "id",
+          "displayName" : "Id",
+          "attributeName" : "id",
+          "type" : "STRING",
+          "nullable" : false,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id",
+          "primaryKey" : true
+        }
+      } ]
+    }, {
+      "id" : 2,
+      "pkTable" : {
+        "id" : 5,
+        "title" : "trello_cards_labels",
+        "type" : "TABLE"
+      },
+      "fkTable" : {
+        "id" : 7,
+        "title" : "trello_cards",
+        "type" : "TABLE"
+      },
+      "alias" : "fk_trello_car_id",
+      "userDefined" : true,
+      "fkColumnPairs" : [ {
+        "fkId" : 2,
+        "pkColumn" : {
+          "id" : 32,
+          "title" : "parent_id",
+          "displayName" : "Parent Id",
+          "attributeName" : "parent_id",
+          "type" : "STRING",
+          "nullable" : true,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Parent Id",
+          "primaryKey" : false
+        },
+        "fkColumn" : {
+          "id" : 51,
+          "title" : "id",
+          "displayName" : "Id",
+          "attributeName" : "id",
+          "type" : "STRING",
+          "nullable" : false,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id",
+          "primaryKey" : true
+        }
+      } ]
+    }, {
+      "id" : 3,
+      "pkTable" : {
+        "id" : 6,
+        "title" : "trello_cards_members",
+        "type" : "TABLE"
+      },
+      "fkTable" : {
+        "id" : 7,
+        "title" : "trello_cards",
+        "type" : "TABLE"
+      },
+      "alias" : "fk_trello_car_id",
+      "userDefined" : true,
+      "fkColumnPairs" : [ {
+        "fkId" : 3,
+        "pkColumn" : {
+          "id" : 35,
+          "title" : "parent_id",
+          "displayName" : "Parent Id",
+          "attributeName" : "parent_id",
+          "type" : "STRING",
+          "nullable" : true,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Parent Id",
+          "primaryKey" : false
+        },
+        "fkColumn" : {
+          "id" : 51,
+          "title" : "id",
+          "displayName" : "Id",
+          "attributeName" : "id",
+          "type" : "STRING",
+          "nullable" : false,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id",
+          "primaryKey" : true
+        }
+      } ]
+    }, {
+      "id" : 4,
+      "pkTable" : {
+        "id" : 7,
+        "title" : "trello_cards",
+        "type" : "TABLE"
+      },
+      "fkTable" : {
+        "id" : 4,
+        "title" : "trello_card_comments",
+        "type" : "TABLE"
+      },
+      "alias" : "fk_trello_car_card_id",
+      "userDefined" : true,
+      "fkColumnPairs" : [ {
+        "fkId" : 4,
+        "pkColumn" : {
+          "id" : 51,
+          "title" : "id",
+          "displayName" : "Id",
+          "attributeName" : "id",
+          "type" : "STRING",
+          "nullable" : false,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id",
+          "primaryKey" : true
+        },
+        "fkColumn" : {
+          "id" : 15,
+          "title" : "card_id",
+          "displayName" : "Card Id",
+          "attributeName" : "card_id",
+          "type" : "STRING",
+          "nullable" : true,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Card Id",
+          "primaryKey" : false
+        }
+      } ]
+    }, {
+      "id" : 5,
+      "pkTable" : {
+        "id" : 7,
+        "title" : "trello_cards",
+        "type" : "TABLE"
+      },
+      "fkTable" : {
+        "id" : 2,
+        "title" : "trello_boards",
+        "type" : "TABLE"
+      },
+      "alias" : "fk_trello_boa_id",
+      "userDefined" : true,
+      "fkColumnPairs" : [ {
+        "fkId" : 5,
+        "pkColumn" : {
+          "id" : 52,
+          "title" : "id_board",
+          "displayName" : "Id Board",
+          "attributeName" : "id_board",
+          "type" : "STRING",
+          "nullable" : true,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id Board",
+          "primaryKey" : false
+        },
+        "fkColumn" : {
+          "id" : 6,
+          "title" : "id",
+          "displayName" : "Id",
+          "attributeName" : "id",
+          "type" : "STRING",
+          "nullable" : false,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id",
+          "primaryKey" : true
+        }
+      } ]
+    }, {
+      "id" : 6,
+      "pkTable" : {
+        "id" : 7,
+        "title" : "trello_cards",
+        "type" : "TABLE"
+      },
+      "fkTable" : {
+        "id" : 3,
+        "title" : "trello_board_lists",
+        "type" : "TABLE"
+      },
+      "alias" : "fk_trello_boa_id",
+      "userDefined" : true,
+      "fkColumnPairs" : [ {
+        "fkId" : 6,
+        "pkColumn" : {
+          "id" : 53,
+          "title" : "id_list",
+          "displayName" : "Id List",
+          "attributeName" : "id_list",
+          "type" : "STRING",
+          "nullable" : true,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id List",
+          "primaryKey" : false
+        },
+        "fkColumn" : {
+          "id" : 12,
+          "title" : "id",
+          "displayName" : "Id",
+          "attributeName" : "id",
+          "type" : "STRING",
+          "nullable" : false,
+          "autoIncrement" : false,
+          "roleType" : "DB_COLUMN",
+          "searchable" : true,
+          "readable" : true,
+          "writable" : false,
+          "defaultLabel" : "Id",
+          "primaryKey" : true
+        }
+      } ]
+    } ],
+    "oauthLoginNeeded" : false,
+    "fullyConfigured" : false
+  } ],
+  "notifications" : [ {
+    "id" : "9704e698-4927-4405-b4c5-7729d44d4f6e",
+    "legacyId" : 1,
+    "appId" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+    "version" : 1,
+    "eventType" : "NEW",
+    "serviceId" : 2,
+    "tableId" : 7,
+    "periodicDefinition" : {
+      "groupByDataUsed" : "SAME",
+      "groupByDatePeriod" : "DAY",
+      "reminderPeriod" : 0
+    },
+    "expirationChangeConditions" : {
+      "type" : "EXPRESSION",
+      "left" : {
+        "type" : "TERM",
+        "constraint" : {
+          "tableId" : 7,
+          "columnId" : 53,
+          "columnType" : "STRING",
+          "action" : "CHANGES",
+          "comparator" : "EQUALS_TO",
+          "valueType" : "VALUE"
+        }
+      },
+      "operator" : "OR",
+      "right" : {
+        "type" : "TERM",
+        "constraint" : {
+          "tableId" : 7,
+          "columnId" : 52,
+          "columnType" : "STRING",
+          "action" : "CHANGES",
+          "comparator" : "EQUALS_TO",
+          "valueType" : "VALUE"
+        }
+      }
+    },
+    "expirationDelete" : true,
+    "label" : "73ec0d01-f342-404f-913a-f084c1254f96",
+    "schedule" : {
+      "jobSchedule" : "AFTER_CONNECTOR_SYNC",
+      "runTimezone" : "GMT"
+    },
+    "audience" : "ALL",
+    "messageDefinition" : {
+      "title" : "e64301ee-3e0b-42bc-91a5-e779c74048a0",
+      "body" : "acb99002-f33d-4e19-86e3-22b1e44385c0",
+      "url" : "",
+      "gotoAppPageId" : "e427859b-0895-42a4-911b-a330190e2f0c",
+      "configuration" : {
+        "cardTtlHours" : 336,
+        "highPriority" : false,
+        "cardIcon" : {
+          "imageUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/change_request.c49eec041e302f4ce0e34491526b5afe.svg",
+          "type" : "LIBRARY"
+        }
+      },
+      "actionButtonIds" : [ ],
+      "task" : false
+    },
+    "skipAlreadyProcessedEvents" : false,
+    "hasValidConstraints" : true
+  } ],
+  "resolvers" : [ ],
+  "modelConfiguration" : {
+    "appIds" : [ "df6e66fc-e951-4ba5-aeda-2f54d2db38a0" ],
+    "resolverIds" : [ ],
+    "bundleDescription" : "",
+    "bundleVendor" : "AcmeCorp"
+  },
+  "translationChecksum" : "E874AD482AF6C4C89D45121F9699741B",
+  "appliedSappUpgrades" : [ "microapp-3580", "microapp-6264", "microapp-8576", "microapp-2450", "microapp-4666", "microapp-3547", "microapp-8950", "microapp-4518", "microapp-6617", "microapp-8892", "microapp-7888", "microapp-9701", "microapp-9702", "microapp-6262", "microapp-8921", "microapp-1980", "microapp-4020", "microapp-7561", "microapp-3838", "microapp-5025", "microapp-7984", "microapp-10420", "microapp-7961", "microapp-9597", "microapp-6593", "microapp-6293", "microapp-7290", "microapp-6853", "microapp-8511", "microapp-8003", "microapp-6790", "microapp-3548", "microapp-5227" ],
+  "buildVersion" : "1.0.0-SNAPSHOT.1c751bf2ee6b047911b210aad18c4e97ab8f19bb"
+}

@@ -1,0 +1,20 @@
+{
+  "type" : "HTTP",
+  "vendor" : "AcmeCorp",
+  "id" : "ef2696d4-dcb0-4765-8b82-8946a924ee28",
+  "title" : "A Sample Trello Integration",
+  "description" : "",
+  "iconUrl" : "https://ctx-ws-cdn.cloud.com/assets/microapps/exported/Trello.57c7a25e2f8e991308c4b5972da77a14.svg",
+  "masVersion" : "1.12.9",
+  "created" : "2020-09-07T11:56:41",
+  "supportsOAuthForActions" : false,
+  "i18nLanguages" : [ "en", "fr", "nl" ],
+  "apps" : [ {
+    "uuid" : "df6e66fc-e951-4ba5-aeda-2f54d2db38a0",
+    "title" : "My Trello Boards",
+    "numberOfEvents" : 1,
+    "action" : true
+  } ],
+  "vaResolvers" : [ ],
+  "tags" : [ ]
+}
