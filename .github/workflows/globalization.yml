@@ -4,8 +4,7 @@ on:
     branches:
       - master
   push:
-    branches:
-      - master
+  
 jobs:
   scan:
     runs-on: ubuntu-latest
