@@ -1,4 +1,4 @@
-name: Globalization
+name: G11n
 on:
   pull_request:
     branches:
