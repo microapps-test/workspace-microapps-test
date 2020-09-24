@@ -1,4 +1,4 @@
-name: G11n
+name: PR-changed-files-check
 on:
   pull_request:
     branches:
