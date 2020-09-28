@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Check Changed Files
         id: changed
-        uses: citrix-workspace/g11n-mas-test@master
+        uses: citrix-workspace/g11n-PR-changed-files@master
         with:
           paths: .*i18n/.*\.json
 
