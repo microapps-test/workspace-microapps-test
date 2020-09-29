@@ -2,7 +2,7 @@ name: Prepare bundles
 on:
   push
 env:
-  AZURE_STORAGE_URL: https://microappsicontest.blob.core.windows.net
+  AZURE_STORAGE_URL: ${{ secrets.AZURE_STORAGE_URL }}
   BUNDLES_DIR: bundles
   BUNDLES_BLOB: bundles
   BRANCH_BUNDLES_BLOB: branchbundles
