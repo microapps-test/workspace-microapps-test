@@ -1,0 +1,30 @@
+{
+  "type" : "HTTP",
+  "vendor" : "Citrix",
+  "id" : "3d6423b6-5149-45b7-9269-f69bec19400a",
+  "title" : "BROADCAST",
+  "description" : "",
+  "iconUrl" : "https://iws-prod-global-customicons-cdn-endpoint.azureedge.net/image/DUKGUu26APPO0uBXPrFFKnbJM6WXBuzJ.png",
+  "masVersion" : "1.34.1.ddee688e5ad16d11005f993fd48bb9d6068bf103",
+  "created" : "2020-10-20T13:46:08",
+  "supportsOAuthForActions" : false,
+  "i18nLanguages" : [ "en" ],
+  "apps" : [ {
+    "uuid" : "25f8acb2-8f16-44d1-8fe9-3374495b0ee9",
+    "title" : "Create Broadcast",
+    "numberOfEvents" : 0,
+    "action" : true
+  }, {
+    "uuid" : "5f8f596b-252a-4370-a314-f5c3e70989d0",
+    "title" : "Broadcast",
+    "numberOfEvents" : 2,
+    "action" : true
+  }, {
+    "uuid" : "676fbb0a-456b-4075-a634-dda9340a40f4",
+    "title" : "Manage Broadcast",
+    "numberOfEvents" : 1,
+    "action" : true
+  } ],
+  "vaResolvers" : [ ],
+  "tags" : [ ]
+}
