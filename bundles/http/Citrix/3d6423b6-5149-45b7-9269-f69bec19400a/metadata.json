@@ -5,8 +5,9 @@
   "title" : "BROADCAST",
   "description" : "",
   "iconUrl" : "https://iws-prod-global-customicons-cdn-endpoint.azureedge.net/image/DUKGUu26APPO0uBXPrFFKnbJM6WXBuzJ.png",
-  "masVersion" : "1.34.1.ddee688e5ad16d11005f993fd48bb9d6068bf103",
+  "masVersion" : "1.34.1",
   "created" : "2020-10-20T13:46:08",
+  "categories" : [ "INTERNAL_DEVELOPMENT" ],
   "supportsOAuthForActions" : false,
   "i18nLanguages" : [ "en" ],
   "apps" : [ {
