@@ -2,6 +2,7 @@
   "applications" : [ {
     "appVersion" : {
       "id" : "0fcb035b-8f0a-44aa-94e2-ea754ed7d633",
+      "deprecatedDate" : "2020-11-09T06:39:48.517497Z",
       "serviceId" : 45,
       "version" : 135,
       "parameters" : {
